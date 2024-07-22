@@ -1,0 +1,1 @@
+# agoritmi_foc_smartknob
