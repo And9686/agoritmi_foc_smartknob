@@ -1,4 +1,4 @@
-22662219800563522
+22669107855756072
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -85771,6 +85771,20 @@ rotary encoder
 7
 6
 SamacSys_Parts
+4691
+4691-1
+Integrated Circuit
+0
+4
+4
+SamacSys_Parts
+532610371
+53261-0371-1
+Connector
+0
+5
+5
+SamacSys_Parts
 CAPC1608X90N
 0603
 Capacitor
@@ -85820,6 +85834,13 @@ Integrated Circuit
 8
 8
 SamacSys_Parts
+QFN40P300X300X90-21N
+QFN20_2023
+Integrated Circuit
+0
+21
+21
+SamacSys_Parts
 QFN50P300X300X100-17N-D
 MA730GQ-Z
 Integrated Circuit
@@ -85840,6 +85861,13 @@ Resistor
 0
 2
 2
+SamacSys_Parts
+SOT95P280X145-5N
+SOT-23-5
+Integrated Circuit
+0
+5
+5
 SamacSys_Parts
 SOT230P700X180-4N
 sot-223
@@ -93132,5 +93160,5 @@ solder_pads_4mm_3
 
 
 0
-0
-0
+3
+3
