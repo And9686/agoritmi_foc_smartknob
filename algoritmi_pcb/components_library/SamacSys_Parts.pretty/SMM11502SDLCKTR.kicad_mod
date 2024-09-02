@@ -56,7 +56,7 @@
   (pad 30 smd rect (at -14.000 -2.275 0) (size 1.020 2.770) (layers F.Cu F.Paste F.Mask))
   (pad MH1 np_thru_hole circle (at 13.000 -0) (size 1.19 1.19) (drill 1.19) (layers *.Cu *.Mask))
   (pad MH2 np_thru_hole circle (at -13.000 -0) (size 1.19 1.19) (drill 1.19) (layers *.Cu *.Mask))
-  (model "C:\\Users\\Andrés\\Documents\\Git\\algoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\SMM-115-02-S-D-LC-K-TR.stp"
+  (model "C:\\Users\\aluno\\Documents\\GitHub\\agoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\SMM-115-02-S-D-LC-K-TR.stp"
     (at (xyz 0 0 0.0062992124576268))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

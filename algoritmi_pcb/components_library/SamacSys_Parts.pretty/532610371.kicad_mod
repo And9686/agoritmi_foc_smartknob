@@ -29,7 +29,7 @@
   (pad 3 smd rect (at 1.250 -2.9 0) (size 0.800 1.600) (layers F.Cu F.Paste F.Mask))
   (pad MP1 smd rect (at -3.800 -0 0) (size 2.100 3.000) (layers F.Cu F.Paste F.Mask))
   (pad MP2 smd rect (at 3.800 -0 0) (size 2.100 3.000) (layers F.Cu F.Paste F.Mask))
-  (model "C:\\Users\\Andrés\\Documents\\Git\\algoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\53261-0371.stp"
+  (model "C:\\Users\\aluno\\Documents\\GitHub\\agoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\53261-0371.stp"
     (at (xyz 0 -0.014566929321589 0.070866139854972))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -180))

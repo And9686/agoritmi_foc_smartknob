@@ -22,7 +22,7 @@
   (fp_circle (center -1.175 0) (end -1.175 0.05) (layer F.SilkS) (width 0.2))
   (pad 1 smd rect (at -0.575 0 0) (size 0.65 0.9) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.575 0 0) (size 0.65 0.9) (layers F.Cu F.Paste F.Mask))
-  (model "C:\\Users\\Andrés\\Documents\\Git\\algoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\ERJ-UP3F3000V.stp"
+  (model "C:\\Users\\aluno\\Documents\\GitHub\\agoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\ERJ-UP3F3000V.stp"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
