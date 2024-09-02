@@ -1,0 +1,87 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP 4691
+D Adafruit Accessories NeoPixel Side-Light RGB LED w/ Integrated Driver Chip - 10-pack - SK6812B 4020
+K
+F https://cdn-shop.adafruit.com/product-files/4691/4691_SK68XX_SIDE_REV.04_EN_1_.pdf
+$ENDCMP
+#
+$CMP 53261-0371
+D 1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Tin (Sn) Plating, Friction Lock,  Circuits, Tape and Reel
+K
+F 
+$ENDCMP
+#
+$CMP AP2114HA-3.3TRG1
+D Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3
+K
+F https://www.diodes.com//assets/Datasheets/AP2114.pdf
+$ENDCMP
+#
+$CMP C0603C104K8RAC
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 0.1uF X7R 0603 10%
+K
+F https://www.kemet.com/specsheet/C0603C104K8RAC%7BBULK%7D
+$ENDCMP
+#
+$CMP UR73VH2BTTDR150F
+D Current Sense Resistors - SMD 1206 1W 0.15ohm 1% AEC-Q200
+K
+F https://www.koaspeer.com/pdfs/UR73V.pdf
+$ENDCMP
+#
+$CMP TMC6300-LA-T
+D Highly Efficient Low Voltage, Zero Standby Current Driver for 3-Phase BLDC/PMSM Motors up to 2A peak, Triple Half-Bridge with separate HS and LS control signals
+K
+F https://www.analog.com/TMC6300/datasheet
+$ENDCMP
+#
+$CMP SN74LV1T34DBVR
+D Single Power Supply BUFFER Logic Level Shifter (no enable)
+K
+F http://www.ti.com/lit/gpn/sn74lv1t34
+$ENDCMP
+#
+$CMP SMM-115-02-S-D-LC-K-TR
+D Headers & Wire Housings Low Profile Socket Strips, 2.00 mm Pitch
+K
+F https://suddendocs.samtec.com/prints/smm-1xx-xx-xx-d-xx-xx-x-xx-mkt.pdf
+$ENDCMP
+#
+$CMP SML-D12M8WT86
+D EXCELED&trade; series chip LED: ROHM's chip LED lineup consists of standard type,top-view type, side-view type and reverse-mount type.
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f235664866caa647598714bb71411137.pdf
+$ENDCMP
+#
+$CMP MA710GQ-Z
+D Board Mount Hall Effect / Magnetic Sensors 12-bit, digital, contactless angle sensor with ABZ incremental & PWM outputs
+K
+F 
+$ENDCMP
+#
+$CMP GCM21BC71E475KE36K
+D Capacitor GCM21 L=2.0mm W=1.25mm T=1.25mm
+K
+F https://psearch.en.murata.com/capacitor/product/GCM21BC71E475KE36%23.html
+$ENDCMP
+#
+$CMP ERJ-UP3F3000V
+D Anti-Sulfurated Thick Film Chip Resistors/ Anti-Surge Type, Power Rating (W): 0.25, Chip Size (LxW(EIA)) (mm): 1.6 x 0.8 (EIA:0603), Resistance Values (?): 300, Resistance Tolerance (%): 1, T.C.R (?102/K): ?100
+K
+F https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf
+$ENDCMP
+#
+$CMP CL10A105KA8NNNC
+D Samsung Electro-Mechanics 0603 CL 1uF Ceramic Multilayer Capacitor, 25 V, +85C, X5R Dielectric, +/-10% SMD
+K
+F 
+$ENDCMP
+#
+#End Doc Library

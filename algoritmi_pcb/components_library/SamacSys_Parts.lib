@@ -1,0 +1,379 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 4691
+#/13264939/1447354/2.50/4/3/Integrated Circuit
+DEF 4691 IC 0 30 Y Y 1 F N
+F0 "IC" 750 300 50 H V L CNN
+F1 "4691" 750 200 50 H V L CNN
+F2 "4691" 750 100 50 H I L CNN
+F3 "https://cdn-shop.adafruit.com/product-files/4691/4691_SK68XX_SIDE_REV.04_EN_1_.pdf" 750 0 50 H I L CNN
+F4 "Adafruit Accessories NeoPixel Side-Light RGB LED w/ Integrated Driver Chip - 10-pack - SK6812B 4020" 750 -100 50 H I L CNN "Description"
+F5 "2.1" 750 -200 50 H I L CNN "Height"
+F6 "485-4691" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Adafruit/4691?qs=DPoM0jnrROWxg7zGo0cOBA%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Adafruit" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "4691" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X DIN 1 0 0 200 R 50 50 0 0 P
+X VDD 2 0 -100 200 R 50 50 0 0 P
+X DOUT 3 0 -200 200 R 50 50 0 0 P
+X GND 4 0 -300 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 53261-0371
+#/12884588/1447354/2.50/5/0/Connector
+DEF 53261-0371 J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "53261-0371" 750 200 50 H V L CNN
+F2 "532610371" 750 100 50 H I L CNN
+F3 "" 750 0 50 H I L CNN
+F4 "1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Tin (Sn) Plating, Friction Lock,  Circuits, Tape and Reel" 750 -100 50 H I L CNN "Description"
+F5 "3.6" 750 -200 50 H I L CNN "Height"
+F6 "538-53261-0371" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Molex/53261-0371?qs=%252B72YyncTwW%252BTQBxAO1kJjA%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Molex" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "53261-0371" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 900 0 200 L 50 50 0 0 P
+X 2 2 900 -100 200 L 50 50 0 0 P
+X 3 3 900 -200 200 L 50 50 0 0 P
+X MP1 MP1 0 0 200 R 50 50 0 0 P
+X MP2 MP2 0 -100 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model AP2114HA-3.3TRG1
+#/316530/1447354/2.50/4/2/Integrated Circuit
+DEF AP2114HA-3.3TRG1 IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "AP2114HA-3.3TRG1" 1050 200 50 H V L CNN
+F2 "SOT230P700X180-4N" 1050 100 50 H I L CNN
+F3 "https://www.diodes.com//assets/Datasheets/AP2114.pdf" 1050 0 50 H I L CNN
+F4 "Linear Voltage Regulator IC Positive Fixed 1 Output 1A SOT-223-3" 1050 -100 50 H I L CNN "Description"
+F5 "1.8" 1050 -200 50 H I L CNN "Height"
+F6 "621-AP2114HA-3.3TRG1" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2114HA-3.3TRG1?qs=M%2FOdCRO8QQ3KWhA9Gt6VoQ%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Incorporated" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "AP2114HA-3.3TRG1" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VIN 1 0 0 200 R 50 50 0 0 P
+X GND_1 2 0 -100 200 R 50 50 0 0 P
+X VOUT 3 0 -200 200 R 50 50 0 0 P
+X GND_2 4 1200 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model C0603C104K8RAC
+#/554713/1447354/2.50/2/3/Capacitor
+DEF C0603C104K8RAC C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "C0603C104K8RAC" 350 150 50 H V L CNN
+F2 "CAPC1608X95N" 350 50 50 H I L CNN
+F3 "https://www.kemet.com/specsheet/C0603C104K8RAC%7BBULK%7D" 350 -50 50 H I L CNN
+F4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 0.1uF X7R 0603 10%" 350 -150 50 H I L CNN "Description"
+F5 "0.95" 350 -250 50 H I L CNN "Height"
+F6 "80-C0603C104K8RAC" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0603C104K8RAC?qs=JxH5GSBHSCStdUs4AtW0Gg%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "KEMET" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "C0603C104K8RAC" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model UR73VH2BTTDR150F
+#/19597287/1447354/2.50/2/3/Resistor
+DEF UR73VH2BTTDR150F R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "UR73VH2BTTDR150F" 550 150 50 H V L CNN
+F2 "RESC3216X70N" 550 50 50 H I L CNN
+F3 "https://www.koaspeer.com/pdfs/UR73V.pdf" 550 -50 50 H I L CNN
+F4 "Current Sense Resistors - SMD 1206 1W 0.15ohm 1% AEC-Q200" 550 -150 50 H I L CNN "Description"
+F5 "0.7" 550 -250 50 H I L CNN "Height"
+F6 "" 550 -350 50 H I L CNN "Mouser Part Number"
+F7 "" 550 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "KOA Speer" 550 -550 50 H I L CNN "Manufacturer_Name"
+F9 "UR73VH2BTTDR150F" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model TMC6300-LA-T
+#/18035553/1447354/2.50/21/2/Integrated Circuit
+DEF TMC6300-LA-T IC 0 30 Y Y 1 F N
+F0 "IC" 1250 600 50 H V L CNN
+F1 "TMC6300-LA-T" 1250 500 50 H V L CNN
+F2 "QFN40P300X300X90-21N" 1250 400 50 H I L CNN
+F3 "https://www.analog.com/TMC6300/datasheet" 1250 300 50 H I L CNN
+F4 "Highly Efficient Low Voltage, Zero Standby Current Driver for 3-Phase BLDC/PMSM Motors up to 2A peak, Triple Half-Bridge with separate HS and LS control signals" 1250 200 50 H I L CNN "Description"
+F5 "0.9" 1250 100 50 H I L CNN "Height"
+F6 "700-TMC6300-LA-T" 1250 0 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ADI-Trinamic/TMC6300-LA-T?qs=TiOZkKH1s2SPDan6zA6fKg%3D%3D" 1250 -100 50 H I L CNN "Mouser Price/Stock"
+F8 "Analog Devices" 1250 -200 50 H I L CNN "Manufacturer_Name"
+F9 "TMC6300-LA-T" 1250 -300 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X W 1 0 0 200 R 50 50 0 0 P
+X VCP 2 0 -100 200 R 50 50 0 0 P
+X UH 3 0 -200 200 R 50 50 0 0 P
+X VH 4 0 -300 200 R 50 50 0 0 P
+X WH 5 0 -400 200 R 50 50 0 0 P
+X UL 6 500 -1100 200 U 50 50 0 0 P
+X WL 7 600 -1100 200 U 50 50 0 0 P
+X GND_1 8 700 -1100 200 U 50 50 0 0 P
+X GND_2 9 800 -1100 200 U 50 50 0 0 P
+X VL 10 900 -1100 200 U 50 50 0 0 P
+X U 15 1400 0 200 L 50 50 0 0 P
+X GND_3 14 1400 -100 200 L 50 50 0 0 P
+X 1.8VOUT 13 1400 -200 200 L 50 50 0 0 P
+X DIAG 12 1400 -300 200 L 50 50 0 0 P
+X VIO/NSTDBY 11 1400 -400 200 L 50 50 0 0 P
+X EP 21 400 600 200 D 50 50 0 0 P
+X BRW 20 500 600 200 D 50 50 0 0 P
+X N.C. 19 600 600 200 D 50 50 0 0 N
+X VS 18 700 600 200 D 50 50 0 0 P
+X V 17 800 600 200 D 50 50 0 0 P
+X BRUV 16 900 600 200 D 50 50 0 0 P
+P 5 0 1 6 200 400 1200 400 1200 -900 200 -900 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SN74LV1T34DBVR
+#/362433/1447354/2.50/5/3/Integrated Circuit
+DEF SN74LV1T34DBVR IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SN74LV1T34DBVR" 850 200 50 H V L CNN
+F2 "SOT95P280X145-5N" 850 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/sn74lv1t34" 850 0 50 H I L CNN
+F4 "Single Power Supply BUFFER Logic Level Shifter (no enable)" 850 -100 50 H I L CNN "Description"
+F5 "1.45" 850 -200 50 H I L CNN "Height"
+F6 "595-SN74LV1T34DBVR" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T34DBVR?qs=8sOby8ZxZLE4ekkxA3S6Wg%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Texas Instruments" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SN74LV1T34DBVR" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X NC 1 0 0 200 R 50 50 0 0 N
+X A 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X Y 4 1000 0 200 L 50 50 0 0 P
+X VCC 5 1000 -100 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SMM-115-02-S-D-LC-K-TR
+#/869276/1447354/2.50/30/3/Connector
+DEF SMM-115-02-S-D-LC-K-TR J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "SMM-115-02-S-D-LC-K-TR" 750 200 50 H V L CNN
+F2 "SMM11502SDLCKTR" 750 100 50 H I L CNN
+F3 "https://suddendocs.samtec.com/prints/smm-1xx-xx-xx-d-xx-xx-x-xx-mkt.pdf" 750 0 50 H I L CNN
+F4 "Headers & Wire Housings Low Profile Socket Strips, 2.00 mm Pitch" 750 -100 50 H I L CNN "Description"
+F5 "3.81" 750 -200 50 H I L CNN "Height"
+F6 "200-SMM11502SDLCKTR" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Samtec/SMM-115-02-S-D-LC-K-TR?qs=Cqqh%252BS766wmCL5XLNTE7Jg%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SAMTEC" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SMM-115-02-S-D-LC-K-TR" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 -1400 200 R 50 50 0 0 P
+X 2 2 900 -1400 200 L 50 50 0 0 P
+X 3 3 0 -1300 200 R 50 50 0 0 P
+X 4 4 900 -1300 200 L 50 50 0 0 P
+X 5 5 0 -1200 200 R 50 50 0 0 P
+X 6 6 900 -1200 200 L 50 50 0 0 P
+X 7 7 0 -1100 200 R 50 50 0 0 P
+X 8 8 900 -1100 200 L 50 50 0 0 P
+X 9 9 0 -1000 200 R 50 50 0 0 P
+X 10 10 900 -1000 200 L 50 50 0 0 P
+X 11 11 0 -900 200 R 50 50 0 0 P
+X 12 12 900 -900 200 L 50 50 0 0 P
+X 13 13 0 -800 200 R 50 50 0 0 P
+X 14 14 900 -800 200 L 50 50 0 0 P
+X 15 15 0 -700 200 R 50 50 0 0 P
+X 16 16 900 -700 200 L 50 50 0 0 P
+X 17 17 0 -600 200 R 50 50 0 0 P
+X 18 18 900 -600 200 L 50 50 0 0 P
+X 19 19 0 -500 200 R 50 50 0 0 P
+X 20 20 900 -500 200 L 50 50 0 0 P
+X 21 21 0 -400 200 R 50 50 0 0 P
+X 22 22 900 -400 200 L 50 50 0 0 P
+X 23 23 0 -300 200 R 50 50 0 0 P
+X 24 24 900 -300 200 L 50 50 0 0 P
+X 25 25 0 -200 200 R 50 50 0 0 P
+X 26 26 900 -200 200 L 50 50 0 0 P
+X 27 27 0 -100 200 R 50 50 0 0 P
+X 28 28 900 -100 200 L 50 50 0 0 P
+X 29 29 0 0 200 R 50 50 0 0 P
+X 30 30 900 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -1500 200 -1500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SML-D12M8WT86
+#/323963/1447354/2.50/2/2/LED
+DEF SML-D12M8WT86 LED 0 30 Y Y 1 F N
+F0 "LED" 500 350 50 H V L BNN
+F1 "SML-D12M8WT86" 500 250 50 H V L BNN
+F2 "LEDM1620X150N" 500 150 50 H I L BNN
+F3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f235664866caa647598714bb71411137.pdf" 500 50 50 H I L BNN
+F4 "EXCELED&trade; series chip LED: ROHM\'s chip LED lineup consists of standard type,top-view type, side-view type and reverse-mount type." 500 -50 50 H I L BNN "Description"
+F5 "1.5" 500 -150 50 H I L BNN "Height"
+F6 "755-SML-D12M8WT86" 500 -250 50 H I L BNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/SML-D12M8WT86?qs=4kLU8WoGk0vGWtDreJ93zQ%3D%3D" 500 -350 50 H I L BNN "Mouser Price/Stock"
+F8 "ROHM Semiconductor" 500 -450 50 H I L BNN "Manufacturer_Name"
+F9 "SML-D12M8WT86" 500 -550 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+P 2 0 1 6 200 100 200 -100 N
+P 2 0 1 6 250 100 150 200 N
+P 2 0 1 6 350 100 250 200 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 400 0 500 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+P 4 0 1 10 210 170 180 140 150 200 210 170 F
+P 4 0 1 10 310 170 280 140 250 200 310 170 F
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model MA710GQ-Z
+#/4291056/1447354/2.50/17/3/Integrated Circuit
+DEF MA710GQ-Z IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "MA710GQ-Z" 1050 500 50 H V L CNN
+F2 "QFN50P300X300X100-17N-D" 1050 400 50 H I L CNN
+F3 "" 1050 300 50 H I L CNN
+F4 "Board Mount Hall Effect / Magnetic Sensors 12-bit, digital, contactless angle sensor with ABZ incremental & PWM outputs" 1050 200 50 H I L CNN "Description"
+F5 "1" 1050 100 50 H I L CNN "Height"
+F6 "946-MA710GQ-Z" 1050 0 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Monolithic-Power-Systems-MPS/MA710GQ-Z?qs=YCa%2FAAYMW008m2sVybM2dg%3D%3D" 1050 -100 50 H I L CNN "Mouser Price/Stock"
+F8 "Monolithic Power Systems (MPS)" 1050 -200 50 H I L CNN "Manufacturer_Name"
+F9 "MA710GQ-Z" 1050 -300 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X SSD 1 0 0 200 R 50 50 0 0 P
+X A 2 0 -100 200 R 50 50 0 0 P
+X Z 3 0 -200 200 R 50 50 0 0 P
+X MOSI 4 0 -300 200 R 50 50 0 0 P
+X CS 5 400 -900 200 U 50 50 0 0 P
+X B 6 500 -900 200 U 50 50 0 0 P
+X MISO 7 600 -900 200 U 50 50 0 0 P
+X GND 8 700 -900 200 U 50 50 0 0 P
+X SCLK 12 1200 0 200 L 50 50 0 0 P
+X MGL 11 1200 -100 200 L 50 50 0 0 P
+X TEST 10 1200 -200 200 L 50 50 0 0 P
+X PWM 9 1200 -300 200 L 50 50 0 0 P
+X EP 17 400 600 200 D 50 50 0 0 P
+X MGH 16 500 600 200 D 50 50 0 0 P
+X SSCK 15 600 600 200 D 50 50 0 0 P
+X NC 14 700 600 200 D 50 50 0 0 N
+X VDD 13 800 600 200 D 50 50 0 0 P
+P 5 0 1 6 200 400 1000 400 1000 -700 200 -700 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model GCM21BC71E475KE36K
+#/3426176/1447354/2.50/2/2/Capacitor
+DEF GCM21BC71E475KE36K C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "GCM21BC71E475KE36K" 350 150 50 H V L CNN
+F2 "CAPC2012X140N" 350 50 50 H I L CNN
+F3 "https://psearch.en.murata.com/capacitor/product/GCM21BC71E475KE36%23.html" 350 -50 50 H I L CNN
+F4 "Capacitor GCM21 L=2.0mm W=1.25mm T=1.25mm" 350 -150 50 H I L CNN "Description"
+F5 "1.4" 350 -250 50 H I L CNN "Height"
+F6 "81-GCM21BC71E475KE6K" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GCM21BC71E475KE36K?qs=dNBNMwHp2UBfaO4Bu7xrag%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Murata Electronics" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "GCM21BC71E475KE36K" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model ERJ-UP3F3000V
+#/13615843/1447354/2.50/2/2/Resistor
+DEF ERJ-UP3F3000V R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "ERJ-UP3F3000V" 550 150 50 H V L CNN
+F2 "ERJUP3" 550 50 50 H I L CNN
+F3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf" 550 -50 50 H I L CNN
+F4 "Anti-Sulfurated Thick Film Chip Resistors/ Anti-Surge Type, Power Rating (W): 0.25, Chip Size (LxW(EIA)) (mm): 1.6 x 0.8 (EIA:0603), Resistance Values (?): 300, Resistance Tolerance (%): 1, T.C.R (?102/K): ?100" 550 -150 50 H I L CNN "Description"
+F5 "0.55" 550 -250 50 H I L CNN "Height"
+F6 "667-ERJ-UP3F3000V" 550 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Panasonic/ERJ-UP3F3000V?qs=GedFDFLaBXGMAT9BybhSQA%3D%3D" 550 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Panasonic" 550 -550 50 H I L CNN "Manufacturer_Name"
+F9 "ERJ-UP3F3000V" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model CL10A105KA8NNNC
+#/490502/1447354/2.50/2/3/Capacitor
+DEF CL10A105KA8NNNC C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "CL10A105KA8NNNC" 350 150 50 H V L CNN
+F2 "CAPC1608X90N" 350 50 50 H I L CNN
+F3 "" 350 -50 50 H I L CNN
+F4 "Samsung Electro-Mechanics 0603 CL 1uF Ceramic Multilayer Capacitor, 25 V, +85C, X5R Dielectric, +/-10% SMD" 350 -150 50 H I L CNN "Description"
+F5 "0.9" 350 -250 50 H I L CNN "Height"
+F6 "187-CL10A105KA8NNNC" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A105KA8NNNC?qs=hqM3L16%252BxldY%252BnK4KzDJVg%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "SAMSUNG" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "CL10A105KA8NNNC" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 100 280 -100 N
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 280 0 300 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library
