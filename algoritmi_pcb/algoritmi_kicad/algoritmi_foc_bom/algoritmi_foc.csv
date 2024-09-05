@@ -1,19 +1,36 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"R4,R3";"RESC3216X70N";2;"150m";;;
-2;"R12,R1,R14,R2,R13";"ERJUP3";5;"300R";;;
-3;"C1,C2,C3,C4";"CAPC1608X90N";4;"100nF 50V";;;
-4;"R6,R9,R8,R7,R5,R10";"RESC1608X55N";6;"100K";;;
-5;"MSW4,MSW2,MSW3";"solder_pads_4mm_3";3;"~";;;
-6;"C5,C9";"CAPC2012X145N";2;"10uF 25V";;;
-7;"U1";"QFN40P300X300X90-21N";1;"TMC6300-LA-T";;;
-8;"IC1";"QFN50P300X300X100-17N-D";1;"MA710GQ-Z";;;
-9;"H5,H7,H6,H4";"MountingHole_2.2mm_M2_ISO7380_Pad_NonVirtual";4;"MountHole";;;
-10;"C6";"CAPC1608X90N";1;"1uF";;;
-11;"D1";"LEDM1620X150N";1;"STDBY";;;
-12;"C8,C7";"CAPC2012X140N";2;"4.7uF 25V";;;
-13;"D2";"LEDM1620X150N";1;"ERROR";;;
-14;"H3,H1,H2";"MountingHole_M1.6";3;"MotorHole";;;
-15;"J3";"SMM11502SDLCKTR";1;"SMM-115-02-S-D-LC-K-TR";;;
-16;"IC2";"SOT230P700X180-4N";1;"AP2114HA-3.3TRG1";;;
-17;"J1";"solder_pads_2mm_8";1;"~";;;
-18;"J2";"532610371";1;"53261-0371";;;
+"Reference","Value","Datasheet","Footprint","Qty","DNP","Manufacturer_Part_Number","Mouser Part Number","LCSC Electronics Part Number"
+"C1","100nF 50V","http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B104KB8NNWC.jsp","CAPC1608X90N","1","","CL10B104KB8NNWC","187-CL10B104KB8NNWC",""
+"C2","100nF 50V","http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B104KB8NNWC.jsp","CAPC1608X90N","1","","CL10B104KB8NNWC","187-CL10B104KB8NNWC",""
+"C3","100nF 50V","http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B104KB8NNWC.jsp","CAPC1608X90N","1","","CL10B104KB8NNWC","187-CL10B104KB8NNWC",""
+"C4","100nF 50V","http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B104KB8NNWC.jsp","CAPC1608X90N","1","","CL10B104KB8NNWC","187-CL10B104KB8NNWC",""
+"C5","10uF 25V","https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/6a45835c9b7400e9b49c55c38a8ff4a2.pdf","CAPC2012X145N","1","","CL21A106KAYNNNE","187-CL21A106KAYNNNE",""
+"C7","4.7uF 25V","https://psearch.en.murata.com/capacitor/product/GCM21BC71E475KE36%23.html","CAPC2012X140N","1","","GCM21BC71E475KE36K","81-GCM21BC71E475KE6K",""
+"C8","4.7uF 25V","https://psearch.en.murata.com/capacitor/product/GCM21BC71E475KE36%23.html","CAPC2012X140N","1","","GCM21BC71E475KE36K","81-GCM21BC71E475KE6K",""
+"C9","10uF 25V","https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/6a45835c9b7400e9b49c55c38a8ff4a2.pdf","CAPC2012X145N","1","","CL21A106KAYNNNE","187-CL21A106KAYNNNE",""
+"C10","100nF 50V","http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B104KB8NNWC.jsp","CAPC1608X90N","1","","CL10B104KB8NNWC","187-CL10B104KB8NNWC",""
+"D1","STDBY","https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f235664866caa647598714bb71411137.pdf","LEDM1620X150N","1","","SML-D12M8WT86","755-SML-D12M8WT86",""
+"D2","ERROR","https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f235664866caa647598714bb71411137.pdf","LEDM1620X150N","1","","SML-D12M8WT86","755-SML-D12M8WT86",""
+"IC2","AP2114HA-3.3TRG1","https://www.diodes.com//assets/Datasheets/AP2114.pdf","SOT230P700X180-4N","1","","AP2114HA-3.3TRG1","621-AP2114HA-3.3TRG1",""
+"J1","~","","solder_pads:solder_pads_2mm_8","1","DNP","","1",""
+"J2","53261-0371","","532610371","1","","53261-0371","538-53261-0371",""
+"J3","SMM-115-02-S-D-LC-K-TR","https://suddendocs.samtec.com/prints/smm-1xx-xx-xx-d-xx-xx-x-xx-mkt.pdf","SMM11502SDLCKTR","1","","SMM-115-02-S-D-LC-K-TR","200-SMM11502SDLCKTR",""
+"MSW1","~","","solder_pads:solder_pads_4mm_3","1","","","906-XCF3Z1 ",""
+"MSW2","~","","solder_pads:solder_pads_4mm_3","1","","","906-XCF3Z1 ",""
+"MSW3","~","","solder_pads:solder_pads_4mm_3","1","","","906-XCF3Z1 ",""
+"MSW4","~","","solder_pads:solder_pads_4mm_3","1","","","906-XCF3Z1 ",""
+"R1","300R","https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf","ERJUP3","1","","ERJ-UP3F3000V","667-ERJ-UP3F3000V",""
+"R2","300R","https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf","ERJUP3","1","","ERJ-UP3F3000V","667-ERJ-UP3F3000V",""
+"R3","150m","https://www.koaspeer.com/pdfs/UR73V.pdf","RESC3216X70N","1","","UR73VH2BTTDR150F","660-UR73VH2BTTDR150F ",""
+"R4","150m","https://www.koaspeer.com/pdfs/UR73V.pdf","RESC3216X70N","1","","UR73VH2BTTDR150F","660-UR73VH2BTTDR150F ",""
+"R5","100K","https://www.mouser.co.uk/datasheet/2/54/Bourns_CMP_Datasheet_05.28.20-1854233.pdf","RESC1608X55N","1","","CMP0603-FX-1003ELF","652-CMP0603-FX-1003L",""
+"R6","100K","https://www.mouser.co.uk/datasheet/2/54/Bourns_CMP_Datasheet_05.28.20-1854233.pdf","RESC1608X55N","1","","CMP0603-FX-1003ELF","652-CMP0603-FX-1003L",""
+"R7","100K","https://www.mouser.co.uk/datasheet/2/54/Bourns_CMP_Datasheet_05.28.20-1854233.pdf","RESC1608X55N","1","","CMP0603-FX-1003ELF","652-CMP0603-FX-1003L",""
+"R8","100K","https://www.mouser.co.uk/datasheet/2/54/Bourns_CMP_Datasheet_05.28.20-1854233.pdf","RESC1608X55N","1","","CMP0603-FX-1003ELF","652-CMP0603-FX-1003L",""
+"R9","100K","https://www.mouser.co.uk/datasheet/2/54/Bourns_CMP_Datasheet_05.28.20-1854233.pdf","RESC1608X55N","1","","CMP0603-FX-1003ELF","652-CMP0603-FX-1003L",""
+"R10","100K","https://www.mouser.co.uk/datasheet/2/54/Bourns_CMP_Datasheet_05.28.20-1854233.pdf","RESC1608X55N","1","","CMP0603-FX-1003ELF","652-CMP0603-FX-1003L",""
+"R11","300R","https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf","ERJUP3","1","","ERJ-UP3F3000V","667-ERJ-UP3F3000V",""
+"R12","300R","https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf","ERJUP3","1","","ERJ-UP3F3000V","667-ERJ-UP3F3000V",""
+"R13","300R","https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf","ERJUP3","1","","ERJ-UP3F3000V","667-ERJ-UP3F3000V",""
+"R14","300R","https://industrial.panasonic.com/cdbs/www-data/pdf/RDP0000/AOA0000C337.pdf","ERJUP3","1","","ERJ-UP3F3000V","667-ERJ-UP3F3000V",""
+"U1","TMC6300-LA-T","TMC6300-LA-T","SamacSys_Parts:QFN40P300X300X90-21N","1","","TMC6300-LA-T ","700-TMC6300-LA-T ",""
+"U2","MT6701CT-STD","https://www.lcsc.com/datasheet/lcsc_datasheet_2109011830_Magn-Tek-MT6701CT-STD_C2856764.pdf","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","1","","MT6701CT-STD","","C2856764"

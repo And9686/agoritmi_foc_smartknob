@@ -8654,6 +8654,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "906-XCF3Z1 "
+			(at 287.02 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "67b898cc-6c67-401d-bd8a-7ff1d714c037")
 		)
@@ -8743,6 +8752,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "906-XCF3Z1 "
+			(at 287.02 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7ea07d5-9b86-4edd-98d9-903634d7a30f")
 		)
@@ -8809,6 +8827,24 @@
 		)
 		(property "Description" "The MagnTek rotary position sensor MT6701 is an IC based on Hall sensing technology. A rotating magnetic field in the x-y sensor plane delivers two sinusoidal output signals indicating the angle (α) between the sensor and the magnetic field direction"
 			(at 70.104 177.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Electronics Part Number" "C2856764"
+			(at 69.85 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MT6701CT-STD"
+			(at 69.85 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9294,7 +9330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "660-UR73VH2BTTDR150F "
 			(at 119.38 576.2 0)
 			(effects
 				(font
@@ -11129,6 +11165,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer_Part_Number" "TMC6300-LA-T "
+			(at 88.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "700-TMC6300-LA-T "
+			(at 88.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "20"
 			(uuid "277c53cb-c1c9-4acb-99d1-1ccc4ba62d38")
 		)
@@ -11461,6 +11515,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "906-XCF3Z1 "
+			(at 287.02 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d5946bf-6ac5-48bc-9395-1f71b4c7c1eb")
 		)
@@ -11611,7 +11674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "660-UR73VH2BTTDR150F "
 			(at 119.38 566.04 0)
 			(effects
 				(font
@@ -12362,6 +12425,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "906-XCF3Z1 "
+			(at 287.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b72c8a28-f4d2-4375-80d7-ef83efa9666c")
 		)
@@ -12961,7 +13033,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d797e451-868e-49c3-ae49-74b1d113ae6b")
 		(property "Reference" "J1"
 			(at 69.85 242.57 0)
@@ -12999,6 +13071,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 53.34 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "1"
 			(at 53.34 254 0)
 			(effects
 				(font
