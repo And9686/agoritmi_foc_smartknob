@@ -1,30 +1,192 @@
-(module "CAPC2012X140N" (layer F.Cu)
-  (descr "GCM21 L=2.0mm W=1.25mm T=1.25mm")
-  (tags "Capacitor")
-  (attr smd)
-  (fp_text reference C** (at 0 0) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text user %R (at 0 0) (layer F.Fab)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text value "CAPC2012X140N" (at 0 0) (layer F.SilkS) hide
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_line (start -1.44 -0.87) (end 1.44 -0.87) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 1.44 -0.87) (end 1.44 0.87) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 1.44 0.87) (end -1.44 0.87) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1.44 0.87) (end -1.44 -0.87) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1 -0.625) (end 1 -0.625) (layer F.Fab) (width 0.1))
-  (fp_line (start 1 -0.625) (end 1 0.625) (layer F.Fab) (width 0.1))
-  (fp_line (start 1 0.625) (end -1 0.625) (layer F.Fab) (width 0.1))
-  (fp_line (start -1 0.625) (end -1 -0.625) (layer F.Fab) (width 0.1))
-  (fp_line (start 0 -0.525) (end 0 0.525) (layer F.SilkS) (width 0.2))
-  (pad 1 smd rect (at -0.82 0 0) (size 0.94 1.43) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0.82 0 0) (size 0.94 1.43) (layers F.Cu F.Paste F.Mask))
-  (model "C:\\Users\\aluno\\Documents\\GitHub\\agoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\GCM21BC71E475KE36K.stp"
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "CAPC2012X140N"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "GCM21 L=2.0mm W=1.25mm T=1.25mm")
+	(tags "Capacitor")
+	(property "Reference" "C**"
+		(at -0.01 -1.71 0)
+		(layer "F.SilkS")
+		(uuid "7b94e546-17c9-492c-8fd1-15020916509a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "CAPC2012X140N"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "beaf8b64-058a-448f-b970-caf4d7a7afa2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe2e3f0c-4acc-4742-ad72-6ac732cf588b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc31d9a1-7485-4d03-a7b2-dcff4c04c550")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87492936-7688-461c-80c8-501fa94a8784")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -0.525)
+		(end 0 0.525)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b04910c-835b-47c0-abd4-697f6bb854bf")
+	)
+	(fp_line
+		(start -1.44 -0.87)
+		(end 1.44 -0.87)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ccd8c3e9-69d4-429d-b0ef-26a054d059bc")
+	)
+	(fp_line
+		(start -1.44 0.87)
+		(end -1.44 -0.87)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a793e27c-5e64-441e-ba4d-91954acc54ab")
+	)
+	(fp_line
+		(start 1.44 -0.87)
+		(end 1.44 0.87)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4b280452-7265-4bdc-aa93-11bfe0b63532")
+	)
+	(fp_line
+		(start 1.44 0.87)
+		(end -1.44 0.87)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "72465fa2-8b12-4e4d-bce1-eba12e9cf949")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3cd67c4f-131b-406d-b179-efb2aac12e5e")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d1364d3b-0183-44f6-a153-5f46a3d932bc")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a31f6a78-39ca-41d4-b46d-ec5d1cd1a45c")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "715b888b-d56c-4ce6-aa68-72f7c6ad6812")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "da9cc266-f24b-4ea5-989b-1519ec8c1d4d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.82 0)
+		(size 0.94 1.43)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f2728a0f-5f8f-4543-97fd-51677a86b2fe")
+	)
+	(pad "2" smd rect
+		(at 0.82 0)
+		(size 0.94 1.43)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "190ade07-6ffc-4ad5-8d9d-3c91d0e06c1b")
+	)
+	(model "C:\\Users\\aluno\\Documents\\GitHub\\agoritmi_foc_smartknob\\algoritmi_pcb\\components_library\\SamacSys_Parts.3dshapes\\GCM21BC71E475KE36K.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
