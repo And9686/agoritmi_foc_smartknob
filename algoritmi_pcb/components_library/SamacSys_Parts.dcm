@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SMM-110-02-H-D-K-TR
+D 20 Position, 2.00 mm Tiger Eye&trade; High-Reliability Socket Strip, Single-Row
+K
+F http://suddendocs.samtec.com/prints/smm-1xx-xx-xx-s-xx-xx-x-xx-mkt.pdf
+$ENDCMP
+#
+$CMP TMC6300-LA-T
+D Highly Efficient Low Voltage, Zero Standby Current Driver for 3-Phase BLDC/PMSM Motors up to 2A peak, Triple Half-Bridge with separate HS and LS control signals
+K
+F https://www.analog.com/TMC6300/datasheet
+$ENDCMP
+#
+$CMP 53261-0371
+D 1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Tin (Sn) Plating, Friction Lock,  Circuits, Tape and Reel
+K
+F 
+$ENDCMP
+#
+#End Doc Library

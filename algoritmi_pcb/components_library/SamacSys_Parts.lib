@@ -1,0 +1,131 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SMM-110-02-H-D-K-TR
+#/12224047/1447354/2.50/20/2/Connector
+DEF SMM-110-02-H-D-K-TR J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "SMM-110-02-H-D-K-TR" 750 200 50 H V L CNN
+F2 "SMM-110-02-XX-D-K-TR" 750 100 50 H I L CNN
+F3 "http://suddendocs.samtec.com/prints/smm-1xx-xx-xx-s-xx-xx-x-xx-mkt.pdf" 750 0 50 H I L CNN
+F4 "20 Position, 2.00 mm Tiger Eye&trade; High-Reliability Socket Strip, Single-Row" 750 -100 50 H I L CNN "Description"
+F5 "" 750 -200 50 H I L CNN "Height"
+F6 "" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SAMTEC" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SMM-110-02-H-D-K-TR" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 -900 200 R 50 50 0 0 P
+X 2 2 900 -900 200 L 50 50 0 0 P
+X 3 3 0 -800 200 R 50 50 0 0 P
+X 4 4 900 -800 200 L 50 50 0 0 P
+X 5 5 0 -700 200 R 50 50 0 0 P
+X 6 6 900 -700 200 L 50 50 0 0 P
+X 7 7 0 -600 200 R 50 50 0 0 P
+X 8 8 900 -600 200 L 50 50 0 0 P
+X 9 9 0 -500 200 R 50 50 0 0 P
+X 10 10 900 -500 200 L 50 50 0 0 P
+X 11 11 0 -400 200 R 50 50 0 0 P
+X 12 12 900 -400 200 L 50 50 0 0 P
+X 13 13 0 -300 200 R 50 50 0 0 P
+X 14 14 900 -300 200 L 50 50 0 0 P
+X 15 15 0 -200 200 R 50 50 0 0 P
+X 16 16 900 -200 200 L 50 50 0 0 P
+X 17 17 0 -100 200 R 50 50 0 0 P
+X 18 18 900 -100 200 L 50 50 0 0 P
+X 19 19 0 0 200 R 50 50 0 0 P
+X 20 20 900 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -1000 200 -1000 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model TMC6300-LA-T
+#/18035553/1447354/2.50/21/2/Integrated Circuit
+DEF TMC6300-LA-T IC 0 30 Y Y 1 F N
+F0 "IC" 1250 600 50 H V L CNN
+F1 "TMC6300-LA-T" 1250 500 50 H V L CNN
+F2 "QFN40P300X300X90-21N" 1250 400 50 H I L CNN
+F3 "https://www.analog.com/TMC6300/datasheet" 1250 300 50 H I L CNN
+F4 "Highly Efficient Low Voltage, Zero Standby Current Driver for 3-Phase BLDC/PMSM Motors up to 2A peak, Triple Half-Bridge with separate HS and LS control signals" 1250 200 50 H I L CNN "Description"
+F5 "0.9" 1250 100 50 H I L CNN "Height"
+F6 "700-TMC6300-LA-T" 1250 0 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ADI-Trinamic/TMC6300-LA-T?qs=TiOZkKH1s2SPDan6zA6fKg%3D%3D" 1250 -100 50 H I L CNN "Mouser Price/Stock"
+F8 "Analog Devices" 1250 -200 50 H I L CNN "Manufacturer_Name"
+F9 "TMC6300-LA-T" 1250 -300 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X W 1 0 0 200 R 50 50 0 0 P
+X VCP 2 0 -100 200 R 50 50 0 0 P
+X UH 3 0 -200 200 R 50 50 0 0 P
+X VH 4 0 -300 200 R 50 50 0 0 P
+X WH 5 0 -400 200 R 50 50 0 0 P
+X UL 6 500 -1100 200 U 50 50 0 0 P
+X WL 7 600 -1100 200 U 50 50 0 0 P
+X GND_1 8 700 -1100 200 U 50 50 0 0 P
+X GND_2 9 800 -1100 200 U 50 50 0 0 P
+X VL 10 900 -1100 200 U 50 50 0 0 P
+X U 15 1400 0 200 L 50 50 0 0 P
+X GND_3 14 1400 -100 200 L 50 50 0 0 P
+X 1.8VOUT 13 1400 -200 200 L 50 50 0 0 P
+X DIAG 12 1400 -300 200 L 50 50 0 0 P
+X VIO/NSTDBY 11 1400 -400 200 L 50 50 0 0 P
+X EP 21 400 600 200 D 50 50 0 0 P
+X BRW 20 500 600 200 D 50 50 0 0 P
+X N.C. 19 600 600 200 D 50 50 0 0 N
+X VS 18 700 600 200 D 50 50 0 0 P
+X V 17 800 600 200 D 50 50 0 0 P
+X BRUV 16 900 600 200 D 50 50 0 0 P
+P 5 0 1 6 200 400 1200 400 1200 -900 200 -900 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model 53261-0371
+#/12884588/1447354/2.50/5/0/Connector
+DEF 53261-0371 J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "53261-0371" 750 200 50 H V L CNN
+F2 "532610371" 750 100 50 H I L CNN
+F3 "" 750 0 50 H I L CNN
+F4 "1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Tin (Sn) Plating, Friction Lock,  Circuits, Tape and Reel" 750 -100 50 H I L CNN "Description"
+F5 "3.6" 750 -200 50 H I L CNN "Height"
+F6 "538-53261-0371" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Molex/53261-0371?qs=%252B72YyncTwW%252BTQBxAO1kJjA%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Molex" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "53261-0371" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 900 0 200 L 50 50 0 0 P
+X 2 2 900 -100 200 L 50 50 0 0 P
+X 3 3 900 -200 200 L 50 50 0 0 P
+X MP1 MP1 0 0 200 R 50 50 0 0 P
+X MP2 MP2 0 -100 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
