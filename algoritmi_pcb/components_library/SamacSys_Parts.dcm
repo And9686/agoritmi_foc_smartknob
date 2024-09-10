@@ -24,4 +24,10 @@ K
 F 
 $ENDCMP
 #
+$CMP SMM-107-02-S-D-K-TR
+D 14 Position, 2.00 mm Tiger Eye&trade; High-Reliability Socket Strip, Single-Row
+K
+F https://componentsearchengine.com/Datasheets/1/SMM-107-02-S-D-K-TR.pdf
+$ENDCMP
+#
 #End Doc Library
