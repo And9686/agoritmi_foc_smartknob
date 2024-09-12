@@ -1,4 +1,4 @@
-23755600610499937
+23764231001826122
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -88921,12 +88921,40 @@ Integrated Circuit
 21
 21
 SamacSys_Parts
+SMM-107-02-XX-D-K-TR
+SMM-107-02-XX-D-K-TR
+Connector
+0
+14
+14
+SamacSys_Parts
 SMM-110-02-XX-D-K-TR
 SMM-110-02-XX-D-K-TR
 Connector
 0
 20
 20
+SamacSys_Parts
+SSM-107-XXX-DV-P-TR
+SSM-107-XXX-DV-P-TR
+Connector
+0
+14
+14
+SamacSys_Parts
+SSM105LSH
+SSM-105-L-SH-2
+Connector
+0
+10
+10
+SamacSys_Parts
+TSM-105-YY-ZZZ-SH
+TSM-105-YY-ZZZ-SH
+Connector
+0
+5
+5
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -96683,3 +96711,10 @@ solder_pads_4mm_3
 0
 3
 3
+ssm
+SAMTEC_SSM-105-L-SH
+
+
+0
+10
+10

@@ -160,4 +160,110 @@ P 5 0 1 6 200 100 700 100 700 -700 200 -700 200 100 N
 ENDDRAW
 ENDDEF
 #
+#SamacSys ECAD Model SSM-105-L-SH
+#/833476/1447354/2.50/10/3/Connector
+DEF SSM-105-L-SH J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "SSM-105-L-SH" 750 200 50 H V L CNN
+F2 "SSM105LSH" 750 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/SSM-105-L-SH.pdf" 750 0 50 H I L CNN
+F4 "Headers & Wire Housings Surface Mount PCB Socket Strips, 0.100 pitch" 750 -100 50 H I L CNN "Description"
+F5 "3.18" 750 -200 50 H I L CNN "Height"
+F6 "200-SSM105LSH" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=200-SSM105LSH" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SAMTEC" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SSM-105-L-SH" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X A1 A1 0 0 200 R 50 50 0 0 P
+X A2 A2 0 -100 200 R 50 50 0 0 P
+X A3 A3 0 -200 200 R 50 50 0 0 P
+X A4 A4 0 -300 200 R 50 50 0 0 P
+X A5 A5 0 -400 200 R 50 50 0 0 P
+X B1 B1 900 0 200 L 50 50 0 0 P
+X B2 B2 900 -100 200 L 50 50 0 0 P
+X B3 B3 900 -200 200 L 50 50 0 0 P
+X B4 B4 900 -300 200 L 50 50 0 0 P
+X B5 B5 900 -400 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model SSM-107-L-DV-P-TR
+#/1674969/1447354/2.50/14/2/Connector
+DEF SSM-107-L-DV-P-TR J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "SSM-107-L-DV-P-TR" 750 200 50 H V L CNN
+F2 "SSM-107-XXX-DV-P-TR" 750 100 50 H I L CNN
+F3 "http://suddendocs.samtec.com/prints/ssm-1xx-xxx-dv-xx-xx-xxx-xx-mkt.pdf" 750 0 50 H I L CNN
+F4 "14 Position, Dual Row, Surface Mount PCB Socket Strip, 0.100&quot; pitch" 750 -100 50 H I L CNN "Description"
+F5 "" 750 -200 50 H I L CNN "Height"
+F6 "200-SSM107LDVPTR" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Samtec/SSM-107-L-DV-P-TR?qs=rU5fayqh%252BE1mpUxxMyvR3w%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SAMTEC" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SSM-107-L-DV-P-TR" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 -600 200 R 50 50 0 0 P
+X 2 2 900 -600 200 L 50 50 0 0 P
+X 3 3 0 -500 200 R 50 50 0 0 P
+X 4 4 900 -500 200 L 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+X 6 6 900 -400 200 L 50 50 0 0 P
+X 7 7 0 -300 200 R 50 50 0 0 P
+X 8 8 900 -300 200 L 50 50 0 0 P
+X 9 9 0 -200 200 R 50 50 0 0 P
+X 10 10 900 -200 200 L 50 50 0 0 P
+X 11 11 0 -100 200 R 50 50 0 0 P
+X 12 12 900 -100 200 L 50 50 0 0 P
+X 13 13 0 0 200 R 50 50 0 0 P
+X 14 14 900 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -700 200 -700 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model TSM-105-01-L-SH
+#/475103/1447354/2.50/5/2/Connector
+DEF TSM-105-01-L-SH J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "TSM-105-01-L-SH" 650 200 50 H V L CNN
+F2 "TSM-105-YY-ZZZ-SH" 650 100 50 H I L CNN
+F3 "http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf" 650 0 50 H I L CNN
+F4 "5 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip, Single-Row Vertical" 650 -100 50 H I L CNN "Description"
+F5 "" 650 -200 50 H I L CNN "Height"
+F6 "200-TSM10501LSH" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Samtec/TSM-105-01-L-SH?qs=0lQeLiL1qyZG03rXZ1cbFw%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SAMTEC" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TSM-105-01-L-SH" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model TSM-105-01-F-SH
+#/11604215/1447354/2.50/5/2/Connector
+DEF TSM-105-01-F-SH J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "TSM-105-01-F-SH" 650 200 50 H V L CNN
+F2 "TSM-105-YY-ZZZ-SH" 650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/TSM-105-01-F-SH.pdf" 650 0 50 H I L CNN
+F4 "5 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip, Single-Row Vertical" 650 -100 50 H I L CNN "Description"
+F5 "" 650 -200 50 H I L CNN "Height"
+F6 "200-TSM10501FSH" 650 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=200-TSM10501FSH" 650 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SAMTEC" 650 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TSM-105-01-F-SH" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 0 -400 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 600 100 600 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
 #End Library

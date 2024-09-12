@@ -30,4 +30,28 @@ K
 F https://componentsearchengine.com/Datasheets/1/SMM-107-02-S-D-K-TR.pdf
 $ENDCMP
 #
+$CMP SSM-105-L-SH
+D Headers & Wire Housings Surface Mount PCB Socket Strips, 0.100 pitch
+K
+F https://componentsearchengine.com/Datasheets/1/SSM-105-L-SH.pdf
+$ENDCMP
+#
+$CMP SSM-107-L-DV-P-TR
+D 14 Position, Dual Row, Surface Mount PCB Socket Strip, 0.100&quot; pitch
+K
+F http://suddendocs.samtec.com/prints/ssm-1xx-xxx-dv-xx-xx-xxx-xx-mkt.pdf
+$ENDCMP
+#
+$CMP TSM-105-01-L-SH
+D 5 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip, Single-Row Vertical
+K
+F http://suddendocs.samtec.com/prints/tsm-1xx-xx-xxx-xx-x-xxx-x-mkt.pdf
+$ENDCMP
+#
+$CMP TSM-105-01-F-SH
+D 5 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip, Single-Row Vertical
+K
+F https://componentsearchengine.com/Datasheets/1/TSM-105-01-F-SH.pdf
+$ENDCMP
+#
 #End Doc Library
