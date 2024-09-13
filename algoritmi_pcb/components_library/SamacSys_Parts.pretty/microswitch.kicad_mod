@@ -1,0 +1,109 @@
+(footprint "microswitch"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.2 -2.39 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "84ced6db-0145-4646-a36c-7c6397b7f237")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "microswitch"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e649ac54-b355-4643-90be-70d031d00efa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "afd5af46-086a-47e6-963e-0f763e33fcf3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d600703-120f-44db-80d0-74ba31b68ccc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da79986f-a797-4539-bc50-f1adcf5061e8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "cd78ecc5-5228-41a7-b670-2edc54cd26ae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -2.7 -0.68)
+		(size 1.9 1.6)
+		(drill oval 1.4 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.1640419948)
+		(uuid "7c12558d-2d0f-43cd-bfc6-44687ca05e22")
+	)
+	(pad "2" thru_hole roundrect
+		(at -0.16 -0.68)
+		(size 1.9 1.6)
+		(drill oval 1.4 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.1640419948)
+		(uuid "77feee2c-7d7f-421a-aded-f262cb310d31")
+	)
+	(pad "3" thru_hole roundrect
+		(at 2.38 -0.68)
+		(size 1.9 1.6)
+		(drill oval 1.4 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.1640419948)
+		(uuid "64e1a17e-0321-4b4b-ab39-3c40f77cae2f")
+	)
+)

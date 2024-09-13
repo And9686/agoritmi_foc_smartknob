@@ -54,4 +54,10 @@ K
 F https://componentsearchengine.com/Datasheets/1/TSM-105-01-F-SH.pdf
 $ENDCMP
 #
+$CMP CMP0603-FX-1002ELF
+D BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM
+K
+F https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf
+$ENDCMP
+#
 #End Doc Library
