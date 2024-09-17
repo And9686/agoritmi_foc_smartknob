@@ -1,0 +1,4 @@
+"Reference","Value","Datasheet","Footprint","Qty","DNP","LCSC","Manufacturer_Name","Manufacturer_Part_Number","Mouser Part Number"
+"C1","100nF","~","Capacitor_SMD:C_0201_0603Metric","1","","","","",""
+"J1","TSM-105-01-F-SH","https://componentsearchengine.com/Datasheets/1/TSM-105-01-F-SH.pdf","TSM-105-YY-ZZZ-SH","1","","","SAMTEC","TSM-105-01-F-SH","200-TSM10501FSH"
+"U1","MT6701-CT","","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","1","","C2856764, or C3003196","","",""

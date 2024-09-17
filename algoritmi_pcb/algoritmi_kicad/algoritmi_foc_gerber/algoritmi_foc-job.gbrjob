@@ -3,19 +3,19 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "7.0.10"
+      "Version": "8.0.4"
     },
-    "CreationDate": "2024-07-31T11:10:04+01:00"
+    "CreationDate": "2024-09-16T16:07:14+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "algoritmi_foc",
       "GUID": "616c676f-7269-4746-9d69-5f666f632e6b",
-      "Revision": "Andr_s Motta"
+      "Revision": "Andrés Motta"
     },
     "Size": {
-      "X": 81.4,
-      "Y": 81.4
+      "X": 45.3,
+      "Y": 29.3
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -28,8 +28,8 @@
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.2,
-      "TrackToRegion": 0.25,
-      "RegionToRegion": 0.25
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [

@@ -60,4 +60,10 @@ K
 F https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf
 $ENDCMP
 #
+$CMP AV4404
+D Basic / Snap Action Switches SPDT 0.5A, Pin Plunger, PCB
+K
+F https://www.digikey.in/product-detail/en/panasonic-electric-works/AV4404/255-3745-ND/646764
+$ENDCMP
+#
 #End Doc Library

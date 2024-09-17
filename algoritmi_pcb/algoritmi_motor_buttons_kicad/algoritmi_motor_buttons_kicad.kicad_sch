@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "28714b9f-a6df-4fd3-b17c-6e502aee41ec")
 	(paper "A4")
+	(title_block
+		(title "algoritmi_foc_motor")
+		(rev "0.0.2")
+		(company "Universidade do Minho")
+		(comment 1 "This PCB if for the encoder and motor")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers hide)
@@ -342,6 +348,175 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:AV4404"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 19.05 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "AV4404"
+				(at 19.05 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "AV4404"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.digikey.in/product-detail/en/panasonic-electric-works/AV4404/255-3745-ND/646764"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Basic / Snap Action Switches SPDT 0.5A, Pin Plunger, PCB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "5.2"
+				(at 19.05 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 19.05 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 19.05 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Panasonic"
+				(at 19.05 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "AV4404"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "AV4404_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -708,122 +883,6 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:microswitch"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 7.366 6.096 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "microswitch_1_1"
-				(rectangle
-					(start 5.08 5.08)
-					(end 10.16 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type color)
-						(color 255 233 176 1)
-					)
-				)
-				(pin input line
-					(at 2.54 3.81 0)
-					(length 2.54)
-					(name "COM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 1.27 0)
-					(length 2.54)
-					(name "NO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -1.27 0)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -1138,98 +1197,98 @@
 		)
 	)
 	(junction
-		(at 68.58 85.09)
+		(at 60.96 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21676518-d000-412e-883e-a8e807d477fe")
 	)
 	(junction
-		(at 123.19 165.1)
+		(at 116.84 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b818706-5a42-4849-941c-c28f3877691d")
 	)
 	(junction
-		(at 139.7 86.36)
+		(at 157.48 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f467a26-c9c2-486c-8255-98a6d2295065")
 	)
 	(junction
-		(at 139.7 142.24)
+		(at 133.35 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81c61784-a309-4a86-8eaf-347d3b1f8bed")
 	)
 	(junction
-		(at 52.07 107.95)
+		(at 44.45 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "895a0499-b00c-4110-9aab-a23084e1a76d")
 	)
 	(junction
-		(at 62.23 138.43)
+		(at 59.69 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae112410-2abe-4f9c-a742-f991e7d50697")
 	)
 	(junction
-		(at 46.99 39.37)
+		(at 24.13 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3c6202f-f842-4bd7-9ebb-22426b319060")
 	)
 	(junction
-		(at 45.72 161.29)
+		(at 43.18 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d72f5be7-b822-4f54-a908-5f4298e6e5e3")
 	)
 	(junction
-		(at 46.99 48.26)
+		(at 24.13 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d738bf1d-fe16-40aa-ac0e-24081d5f7890")
 	)
 	(junction
-		(at 123.19 109.22)
+		(at 140.97 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d87f576d-8acb-44f3-b650-ca3c8e7055fc")
 	)
 	(junction
-		(at 58.42 39.37)
+		(at 35.56 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd4686e7-d1dd-4b0a-b9a8-cd6c17894263")
 	)
 	(no_connect
-		(at 149.86 88.9)
+		(at 167.64 90.17)
 		(uuid "0ad152af-fe6e-4011-a6ce-d10bbd1f8ec5")
 	)
 	(no_connect
-		(at 100.33 45.72)
+		(at 77.47 31.75)
 		(uuid "2b4d0fe4-4dcd-4b73-903c-c14af5795c71")
 	)
 	(no_connect
-		(at 72.39 140.97)
+		(at 69.85 135.89)
 		(uuid "95aa9867-a19a-419c-a724-76970bda4a7a")
 	)
 	(no_connect
-		(at 149.86 144.78)
+		(at 143.51 146.05)
 		(uuid "aac164f7-fe1e-4111-884e-ef88a2659eec")
 	)
 	(no_connect
-		(at 78.74 87.63)
+		(at 71.12 90.17)
 		(uuid "acbca8c6-9090-4625-b238-6672e8bd1bf5")
 	)
 	(no_connect
-		(at 64.77 43.18)
+		(at 41.91 29.21)
 		(uuid "f7b1a436-09f4-439f-9631-e0bc15019e86")
 	)
 	(wire
 		(pts
-			(xy 58.42 39.37) (xy 46.99 39.37)
+			(xy 35.56 25.4) (xy 24.13 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1239,7 +1298,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 165.1) (xy 139.7 162.56)
+			(xy 133.35 166.37) (xy 133.35 163.83)
 		)
 		(stroke
 			(width 0)
@@ -1249,7 +1308,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 109.22) (xy 123.19 109.22)
+			(xy 125.73 110.49) (xy 140.97 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1259,7 +1318,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 80.01) (xy 139.7 83.82)
+			(xy 157.48 81.28) (xy 157.48 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1269,7 +1328,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 38.1) (xy 58.42 39.37)
+			(xy 35.56 24.13) (xy 35.56 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1279,7 +1338,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 85.09) (xy 68.58 85.09)
+			(xy 52.07 87.63) (xy 60.96 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1289,7 +1348,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 88.9) (xy 139.7 86.36)
+			(xy 157.48 90.17) (xy 157.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1299,7 +1358,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 39.37) (xy 201.93 44.45)
+			(xy 119.38 24.13) (xy 119.38 29.21)
 		)
 		(stroke
 			(width 0)
@@ -1309,7 +1368,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 109.22) (xy 139.7 109.22)
+			(xy 140.97 110.49) (xy 157.48 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1319,7 +1378,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 144.78) (xy 139.7 142.24)
+			(xy 133.35 146.05) (xy 133.35 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1329,7 +1388,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 43.18) (xy 189.23 39.37)
+			(xy 106.68 27.94) (xy 106.68 24.13)
 		)
 		(stroke
 			(width 0)
@@ -1339,7 +1398,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 138.43) (xy 72.39 138.43)
+			(xy 59.69 133.35) (xy 69.85 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1349,7 +1408,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 161.29) (xy 62.23 158.75)
+			(xy 59.69 156.21) (xy 59.69 153.67)
 		)
 		(stroke
 			(width 0)
@@ -1359,7 +1418,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 138.43) (xy 35.56 138.43)
+			(xy 27.94 133.35) (xy 33.02 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1369,7 +1428,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 165.1) (xy 123.19 165.1)
+			(xy 101.6 166.37) (xy 116.84 166.37)
 		)
 		(stroke
 			(width 0)
@@ -1379,7 +1438,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 92.71) (xy 107.95 86.36)
+			(xy 125.73 93.98) (xy 125.73 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1389,7 +1448,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 100.33) (xy 107.95 109.22)
+			(xy 125.73 101.6) (xy 125.73 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1399,7 +1458,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 36.83) (xy 46.99 39.37)
+			(xy 24.13 22.86) (xy 24.13 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1409,7 +1468,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 86.36) (xy 113.03 86.36)
+			(xy 125.73 87.63) (xy 130.81 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1419,7 +1478,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 149.86 86.36)
+			(xy 157.48 87.63) (xy 167.64 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1429,7 +1488,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 107.95) (xy 52.07 107.95)
+			(xy 29.21 110.49) (xy 44.45 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1439,7 +1498,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 138.43) (xy 62.23 138.43)
+			(xy 50.8 133.35) (xy 59.69 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1449,7 +1508,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 165.1) (xy 139.7 165.1)
+			(xy 116.84 166.37) (xy 133.35 166.37)
 		)
 		(stroke
 			(width 0)
@@ -1459,7 +1518,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 46.99) (xy 46.99 48.26)
+			(xy 24.13 33.02) (xy 24.13 34.29)
 		)
 		(stroke
 			(width 0)
@@ -1469,7 +1528,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 86.36) (xy 139.7 86.36)
+			(xy 148.59 87.63) (xy 157.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1479,7 +1538,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 152.4) (xy 30.48 161.29)
+			(xy 27.94 147.32) (xy 27.94 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1489,7 +1548,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 48.26) (xy 46.99 50.8)
+			(xy 24.13 34.29) (xy 24.13 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1499,7 +1558,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 161.29) (xy 62.23 161.29)
+			(xy 43.18 156.21) (xy 59.69 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1509,7 +1568,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 85.09) (xy 78.74 85.09)
+			(xy 60.96 87.63) (xy 71.12 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1519,7 +1578,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 139.7) (xy 149.86 139.7)
+			(xy 133.35 140.97) (xy 143.51 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1529,7 +1588,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 142.24) (xy 139.7 142.24)
+			(xy 124.46 143.51) (xy 133.35 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1539,7 +1598,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 107.95) (xy 68.58 105.41)
+			(xy 60.96 110.49) (xy 60.96 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1549,7 +1608,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 82.55) (xy 78.74 82.55)
+			(xy 60.96 85.09) (xy 71.12 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1559,7 +1618,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 99.06) (xy 36.83 107.95)
+			(xy 29.21 101.6) (xy 29.21 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1569,7 +1628,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 35.56) (xy 134.62 41.91)
+			(xy 95.25 40.64) (xy 95.25 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1577,9 +1636,19 @@
 		)
 		(uuid "9ea7730a-834a-4f2c-8efa-5acd1b2179e9")
 	)
+	(polyline
+		(pts
+			(xy 16.51 66.04) (xy 281.94 66.04)
+		)
+		(stroke
+			(width 0.3)
+			(type dash_dot)
+		)
+		(uuid "a0964907-d58a-48c8-a6e7-38632d33e4ea")
+	)
 	(wire
 		(pts
-			(xy 62.23 132.08) (xy 62.23 135.89)
+			(xy 59.69 127) (xy 59.69 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1589,7 +1658,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 44.45) (xy 139.7 44.45)
+			(xy 90.17 49.53) (xy 96.52 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1599,7 +1668,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 40.64) (xy 58.42 40.64)
+			(xy 41.91 26.67) (xy 35.56 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1609,7 +1678,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 83.82) (xy 149.86 83.82)
+			(xy 157.48 85.09) (xy 167.64 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1619,7 +1688,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 135.89) (xy 72.39 135.89)
+			(xy 59.69 130.81) (xy 69.85 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1629,7 +1698,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 148.59) (xy 107.95 142.24)
+			(xy 101.6 149.86) (xy 101.6 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1639,7 +1708,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 144.78) (xy 30.48 138.43)
+			(xy 27.94 139.7) (xy 27.94 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1649,7 +1718,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 38.1) (xy 58.42 38.1)
+			(xy 41.91 24.13) (xy 35.56 24.13)
 		)
 		(stroke
 			(width 0)
@@ -1659,7 +1728,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 91.44) (xy 36.83 85.09)
+			(xy 29.21 93.98) (xy 29.21 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1669,7 +1738,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 85.09) (xy 41.91 85.09)
+			(xy 29.21 87.63) (xy 34.29 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1679,7 +1748,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 41.91) (xy 139.7 41.91)
+			(xy 95.25 46.99) (xy 96.52 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1689,7 +1758,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 35.56) (xy 128.27 44.45)
+			(xy 90.17 40.64) (xy 90.17 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1699,7 +1768,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 107.95) (xy 68.58 107.95)
+			(xy 44.45 110.49) (xy 60.96 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1709,7 +1778,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 156.21) (xy 107.95 165.1)
+			(xy 101.6 157.48) (xy 101.6 166.37)
 		)
 		(stroke
 			(width 0)
@@ -1719,7 +1788,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 142.24) (xy 149.86 142.24)
+			(xy 133.35 143.51) (xy 143.51 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1729,7 +1798,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 135.89) (xy 139.7 139.7)
+			(xy 133.35 137.16) (xy 133.35 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1739,7 +1808,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 48.26) (xy 64.77 48.26)
+			(xy 24.13 34.29) (xy 41.91 34.29)
 		)
 		(stroke
 			(width 0)
@@ -1749,7 +1818,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 161.29) (xy 45.72 161.29)
+			(xy 27.94 156.21) (xy 43.18 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1759,7 +1828,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 142.24) (xy 113.03 142.24)
+			(xy 101.6 143.51) (xy 106.68 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1769,7 +1838,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 45.72) (xy 64.77 48.26)
+			(xy 41.91 31.75) (xy 41.91 34.29)
 		)
 		(stroke
 			(width 0)
@@ -1779,7 +1848,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 78.74) (xy 68.58 82.55)
+			(xy 60.96 81.28) (xy 60.96 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1789,7 +1858,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 109.22) (xy 139.7 106.68)
+			(xy 157.48 110.49) (xy 157.48 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1799,7 +1868,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 40.64) (xy 58.42 39.37)
+			(xy 35.56 26.67) (xy 35.56 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1809,7 +1878,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 140.97) (xy 62.23 138.43)
+			(xy 59.69 135.89) (xy 59.69 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1819,7 +1888,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 87.63) (xy 68.58 85.09)
+			(xy 60.96 90.17) (xy 60.96 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1827,9 +1896,31 @@
 		)
 		(uuid "ff8de90e-5329-495b-97ad-51bd89091520")
 	)
+	(text "4x MICROSWITCHES"
+		(exclude_from_sim no)
+		(at 30.988 69.088 0)
+		(effects
+			(font
+				(face "Proto Mono Regular")
+				(size 2 2)
+			)
+		)
+		(uuid "347d9cb3-af53-4d9f-b6fd-64e4ffdab3bf")
+	)
+	(text "ENCODER"
+		(exclude_from_sim no)
+		(at 23.114 65.024 0)
+		(effects
+			(font
+				(face "Proto Mono Regular")
+				(size 2 2)
+			)
+		)
+		(uuid "b226cada-fbfe-439e-8d7d-33fe2f79e1d8")
+	)
 	(global_label "DO"
 		(shape input)
-		(at 139.7 52.07 180)
+		(at 96.52 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1839,7 +1930,7 @@
 		)
 		(uuid "1640f062-46e1-4e7c-966b-7c3356507a70")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.1143 52.07 0)
+			(at 90.9343 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1851,7 +1942,7 @@
 	)
 	(global_label "CLK"
 		(shape output)
-		(at 100.33 40.64 0)
+		(at 77.47 26.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1861,7 +1952,7 @@
 		)
 		(uuid "24bdfa33-2ab8-47c3-a0e4-af985af45622")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.8833 40.64 0)
+			(at 84.0233 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1873,7 +1964,7 @@
 	)
 	(global_label "CSN"
 		(shape input)
-		(at 139.7 46.99 180)
+		(at 96.52 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1883,7 +1974,7 @@
 		)
 		(uuid "459e22d7-0c6e-4780-9840-b600533437a5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.4952 46.99 0)
+			(at 103.3152 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1895,7 +1986,7 @@
 	)
 	(global_label "CSN"
 		(shape output)
-		(at 100.33 38.1 0)
+		(at 77.47 24.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1905,7 +1996,7 @@
 		)
 		(uuid "e2feffd3-6c3a-45f2-a1e7-067073162713")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.1252 38.1 0)
+			(at 84.2652 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1917,7 +2008,7 @@
 	)
 	(global_label "CLK"
 		(shape input)
-		(at 139.7 49.53 180)
+		(at 96.52 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1927,7 +2018,7 @@
 		)
 		(uuid "f1ed698c-6917-4507-aab2-b48b935c0d77")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.1467 49.53 0)
+			(at 89.9667 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1939,7 +2030,7 @@
 	)
 	(global_label "DO"
 		(shape output)
-		(at 100.33 43.18 0)
+		(at 77.47 29.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1949,7 +2040,7 @@
 		)
 		(uuid "fa69c6ba-404c-4c65-be45-e43e559194d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.9157 43.18 0)
+			(at 83.0557 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1961,7 +2052,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 107.95 152.4 0)
+		(at 101.6 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1970,7 +2061,7 @@
 		(fields_autoplaced yes)
 		(uuid "12517197-02c4-48fd-9bec-6f7e0688dff2")
 		(property "Reference" "C5"
-			(at 111.76 151.1299 0)
+			(at 105.41 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1979,7 +2070,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 111.76 153.6699 0)
+			(at 105.41 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1988,7 +2079,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 108.9152 156.21 0)
+			(at 102.5652 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1997,7 +2088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 152.4 0)
+			(at 101.6 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2006,7 +2097,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 107.95 152.4 0)
+			(at 101.6 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2015,7 +2106,7 @@
 			)
 		)
 		(property "Manufacturer No" "CL10B104KB8NNWC"
-			(at 107.95 152.4 0)
+			(at 101.6 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +2131,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 139.7 106.68 90)
+		(at 157.48 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2049,7 +2140,7 @@
 		(fields_autoplaced yes)
 		(uuid "250fd781-25e1-41aa-aa52-f5628291983b")
 		(property "Reference" "R4"
-			(at 142.24 96.5199 90)
+			(at 160.02 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2058,7 +2149,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 142.24 99.0599 90)
+			(at 160.02 100.3299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2067,7 +2158,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 235.89 92.71 0)
+			(at 253.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2077,7 +2168,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 335.89 92.71 0)
+			(at 353.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2087,7 +2178,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 139.7 106.68 0)
+			(at 157.48 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2096,7 +2187,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 535.89 92.71 0)
+			(at 553.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,7 +2197,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 635.89 92.71 0)
+			(at 653.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2116,7 +2207,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 735.89 92.71 0)
+			(at 753.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2126,7 +2217,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 835.89 92.71 0)
+			(at 853.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2136,7 +2227,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 935.89 92.71 0)
+			(at 953.67 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2162,7 +2253,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 201.93 39.37 0)
+		(at 119.38 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2171,7 +2262,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b5d19ed-ddad-46f0-b0a7-5292420df17d")
 		(property "Reference" "#FLG02"
-			(at 201.93 37.465 0)
+			(at 119.38 22.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2180,7 +2271,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 201.93 34.29 0)
+			(at 119.38 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2188,7 +2279,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 39.37 0)
+			(at 119.38 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2197,7 +2288,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 39.37 0)
+			(at 119.38 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2206,7 +2297,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 201.93 39.37 0)
+			(at 119.38 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2228,7 +2319,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 68.58 78.74 0)
+		(at 60.96 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2237,7 +2328,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b7c6328-8781-41d8-9bc9-9e18979e82c8")
 		(property "Reference" "#PWR06"
-			(at 68.58 82.55 0)
+			(at 60.96 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2246,7 +2337,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 68.58 73.66 0)
+			(at 60.96 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2254,7 +2345,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 78.74 0)
+			(at 60.96 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2263,7 +2354,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 78.74 0)
+			(at 60.96 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2272,7 +2363,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 68.58 78.74 0)
+			(at 60.96 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2293,90 +2384,8 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:microswitch")
-		(at 147.32 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33caded9-5f6c-4dc6-bb89-588d4d65bb4b")
-		(property "Reference" "U5"
-			(at 158.75 141.6049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 158.75 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:microswitch"
-			(at 147.32 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Up to 500 mA"
-			(at 147.32 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer No" "AV4444"
-			(at 147.32 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c0598baf-225f-4dd4-a1b2-81e7841751ba")
-		)
-		(pin "1"
-			(uuid "1b2608c5-794b-482c-a742-a56dd21bfb64")
-		)
-		(pin "3"
-			(uuid "0af5a405-cd97-4d5f-afc0-093d9642c723")
-		)
-		(instances
-			(project "algoritmi_motor_buttons_kicad"
-				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 134.62 35.56 0)
+		(at 95.25 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2385,7 +2394,7 @@
 		(fields_autoplaced yes)
 		(uuid "34819796-75a9-4312-8ce2-7f0ccc7925c7")
 		(property "Reference" "#PWR04"
-			(at 134.62 39.37 0)
+			(at 95.25 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2394,7 +2403,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 134.62 30.48 0)
+			(at 95.25 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2402,7 +2411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 35.56 0)
+			(at 95.25 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2411,7 +2420,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 35.56 0)
+			(at 95.25 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2420,7 +2429,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 134.62 35.56 0)
+			(at 95.25 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2441,8 +2450,132 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:AV4404")
+		(at 167.64 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3567b131-529c-48f5-b3d7-4f8aa8931447")
+		(property "Reference" "J3"
+			(at 172.72 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AV4404"
+			(at 172.72 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "AV4404"
+			(at 186.69 180.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/product-detail/en/panasonic-electric-works/AV4404/255-3745-ND/646764"
+			(at 186.69 280.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Basic / Snap Action Switches SPDT 0.5A, Pin Plunger, PCB"
+			(at 167.64 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "5.2"
+			(at 186.69 480.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 186.69 580.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 186.69 680.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 186.69 780.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AV4404"
+			(at 186.69 880.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45ccc2f2-9d17-4a7e-97a9-ef4f00f3fa40")
+		)
+		(pin "2"
+			(uuid "20f326bd-dc72-428f-b78c-a1306d88e02e")
+		)
+		(pin "3"
+			(uuid "65cb777a-3d27-4c20-90d2-7c0cc1f76797")
+		)
+		(instances
+			(project "algoritmi_motor_buttons_kicad"
+				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
-		(at 46.99 43.18 0)
+		(at 24.13 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2451,7 +2584,7 @@
 		(fields_autoplaced yes)
 		(uuid "3aacc584-cea5-4d35-880c-fdddd54db9aa")
 		(property "Reference" "C1"
-			(at 50.8 41.9099 0)
+			(at 27.94 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2460,7 +2593,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 50.8 44.4499 0)
+			(at 27.94 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,7 +2602,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 47.9552 46.99 0)
+			(at 25.0952 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,7 +2611,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 43.18 0)
+			(at 24.13 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2487,7 +2620,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 46.99 43.18 0)
+			(at 24.13 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,7 +2629,7 @@
 			)
 		)
 		(property "Manufacturer No" "CL10B104KB8NNWC"
-			(at 46.99 43.18 0)
+			(at 24.13 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2521,7 +2654,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 139.7 162.56 90)
+		(at 133.35 163.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2530,7 +2663,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d478a04-6d4d-4a01-b6b7-b71231b666c9")
 		(property "Reference" "R8"
-			(at 142.24 152.3999 90)
+			(at 135.89 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,7 +2672,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 142.24 154.9399 90)
+			(at 135.89 156.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2548,7 +2681,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 235.89 148.59 0)
+			(at 229.54 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2558,7 +2691,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 335.89 148.59 0)
+			(at 329.54 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2568,7 +2701,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 139.7 162.56 0)
+			(at 133.35 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2577,7 +2710,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 535.89 148.59 0)
+			(at 529.54 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,7 +2720,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 635.89 148.59 0)
+			(at 629.54 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2597,7 +2730,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 735.89 148.59 0)
+			(at 729.54 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2607,7 +2740,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 835.89 148.59 0)
+			(at 829.54 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2617,7 +2750,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 935.89 148.59 0)
+			(at 929.54 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2643,7 +2776,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 161.29 0)
+		(at 43.18 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2652,7 +2785,7 @@
 		(fields_autoplaced yes)
 		(uuid "40e7dc16-2606-4a57-b67b-8759bb5e4413")
 		(property "Reference" "#PWR010"
-			(at 45.72 167.64 0)
+			(at 43.18 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2661,7 +2794,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 166.37 0)
+			(at 43.18 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2669,7 +2802,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 161.29 0)
+			(at 43.18 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2678,7 +2811,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 161.29 0)
+			(at 43.18 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2687,7 +2820,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 161.29 0)
+			(at 43.18 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +2842,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 62.23 158.75 90)
+		(at 59.69 153.67 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2718,7 +2851,7 @@
 		(fields_autoplaced yes)
 		(uuid "4bb5b1fa-f8e4-4c55-a8cd-2f8ab6df3414")
 		(property "Reference" "R6"
-			(at 64.77 148.5899 90)
+			(at 62.23 143.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,7 +2860,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 64.77 151.1299 90)
+			(at 62.23 146.0499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2736,7 +2869,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 158.42 144.78 0)
+			(at 155.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2746,7 +2879,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 258.42 144.78 0)
+			(at 255.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2756,7 +2889,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 62.23 158.75 0)
+			(at 59.69 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2765,7 +2898,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 458.42 144.78 0)
+			(at 455.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2775,7 +2908,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 558.42 144.78 0)
+			(at 555.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +2918,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 658.42 144.78 0)
+			(at 655.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2795,7 +2928,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 758.42 144.78 0)
+			(at 755.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2805,7 +2938,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 858.42 144.78 0)
+			(at 855.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2831,7 +2964,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 201.93 44.45 0)
+		(at 119.38 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2840,7 +2973,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d9e3be8-0653-427b-bd6a-fa9232e9696a")
 		(property "Reference" "#PWR014"
-			(at 201.93 50.8 0)
+			(at 119.38 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2849,7 +2982,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 201.93 49.53 0)
+			(at 119.38 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2857,7 +2990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 44.45 0)
+			(at 119.38 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2866,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 44.45 0)
+			(at 119.38 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2875,7 +3008,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 44.45 0)
+			(at 119.38 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2897,7 +3030,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 130.81 142.24 180)
+		(at 124.46 143.51 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2906,7 +3039,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ee3e4eb-e620-4d63-9376-042a4d2995b2")
 		(property "Reference" "R7"
-			(at 121.92 135.89 0)
+			(at 115.57 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2914,7 +3047,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 121.92 138.43 0)
+			(at 115.57 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2922,7 +3055,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 116.84 46.05 0)
+			(at 110.49 47.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +3065,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 116.84 -53.95 0)
+			(at 110.49 -52.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2942,7 +3075,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 130.81 142.24 0)
+			(at 124.46 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2951,7 +3084,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 116.84 -253.95 0)
+			(at 110.49 -252.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2961,7 +3094,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 116.84 -353.95 0)
+			(at 110.49 -352.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2971,7 +3104,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 116.84 -453.95 0)
+			(at 110.49 -452.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,7 +3114,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 116.84 -553.95 0)
+			(at 110.49 -552.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2991,7 +3124,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 116.84 -653.95 0)
+			(at 110.49 -652.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,16 +3150,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 30.48 148.59 0)
+		(at 27.94 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6f361fee-6d71-44af-b1fd-e9deb01374e5")
 		(property "Reference" "C4"
-			(at 34.29 147.3199 0)
+			(at 31.75 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3035,7 +3167,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 34.29 149.8599 0)
+			(at 31.75 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3044,7 +3176,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 31.4452 152.4 0)
+			(at 28.9052 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3053,7 +3185,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 148.59 0)
+			(at 27.94 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,7 +3194,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 30.48 148.59 0)
+			(at 27.94 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3071,7 +3203,7 @@
 			)
 		)
 		(property "Manufacturer No" "CL10B104KB8NNWC"
-			(at 30.48 148.59 0)
+			(at 27.94 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3096,7 +3228,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 109.22 0)
+		(at 140.97 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3105,7 +3237,7 @@
 		(fields_autoplaced yes)
 		(uuid "6fb0dda9-6798-4747-9a0f-0b5fd4d25bdd")
 		(property "Reference" "#PWR08"
-			(at 123.19 115.57 0)
+			(at 140.97 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,7 +3246,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 114.3 0)
+			(at 140.97 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3122,7 +3254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 109.22 0)
+			(at 140.97 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3131,7 +3263,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 109.22 0)
+			(at 140.97 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3140,7 +3272,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 109.22 0)
+			(at 140.97 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3162,7 +3294,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 68.58 105.41 90)
+		(at 60.96 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3171,7 +3303,7 @@
 		(fields_autoplaced yes)
 		(uuid "72f89637-d427-4e57-9049-c2f37dee1e9d")
 		(property "Reference" "R1"
-			(at 71.12 95.2499 90)
+			(at 63.5 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3180,7 +3312,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 71.12 97.7899 90)
+			(at 63.5 100.3299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3189,7 +3321,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 164.77 91.44 0)
+			(at 157.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3199,7 +3331,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 264.77 91.44 0)
+			(at 257.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3209,7 +3341,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 68.58 105.41 0)
+			(at 60.96 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3218,7 +3350,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 464.77 91.44 0)
+			(at 457.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3228,7 +3360,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 564.77 91.44 0)
+			(at 557.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3238,7 +3370,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 664.77 91.44 0)
+			(at 657.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3248,7 +3380,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 764.77 91.44 0)
+			(at 757.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3390,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 864.77 91.44 0)
+			(at 857.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,7 +3416,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 62.23 132.08 0)
+		(at 59.69 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3293,7 +3425,7 @@
 		(fields_autoplaced yes)
 		(uuid "749a8022-0aed-4fa3-bcb1-3b5f388ded04")
 		(property "Reference" "#PWR011"
-			(at 62.23 135.89 0)
+			(at 59.69 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3302,7 +3434,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 62.23 127 0)
+			(at 59.69 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3310,7 +3442,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 132.08 0)
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,7 +3451,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 132.08 0)
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3328,7 +3460,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 62.23 132.08 0)
+			(at 59.69 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,7 +3482,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 189.23 39.37 0)
+		(at 106.68 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3359,7 +3491,7 @@
 		(fields_autoplaced yes)
 		(uuid "776e2d35-1c65-4d3e-8034-d77913d2ac5c")
 		(property "Reference" "#FLG01"
-			(at 189.23 37.465 0)
+			(at 106.68 22.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3368,7 +3500,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 189.23 34.29 0)
+			(at 106.68 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3376,7 +3508,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 39.37 0)
+			(at 106.68 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3385,7 +3517,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 39.37 0)
+			(at 106.68 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3394,7 +3526,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 39.37 0)
+			(at 106.68 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3415,17 +3547,140 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:TSM-105-01-F-SH")
-		(at 139.7 41.91 0)
+		(lib_id "SamacSys_Parts:AV4404")
+		(at 69.85 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "80823b2c-c77f-4434-83fe-e8bc0d5ff7c5")
+		(property "Reference" "J4"
+			(at 74.93 124.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AV4404"
+			(at 74.93 126.746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "AV4404"
+			(at 88.9 225.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/product-detail/en/panasonic-electric-works/AV4404/255-3745-ND/646764"
+			(at 88.9 325.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Basic / Snap Action Switches SPDT 0.5A, Pin Plunger, PCB"
+			(at 69.85 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "5.2"
+			(at 88.9 525.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 88.9 625.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 88.9 725.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 88.9 825.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AV4404"
+			(at 88.9 925.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1642520-83bf-4d89-8b0f-33605aee9198")
+		)
+		(pin "2"
+			(uuid "2955a3c7-02ef-42e7-8f22-129dbc10d0b4")
+		)
+		(pin "3"
+			(uuid "34f389b3-2daf-4730-86a8-2535a2802eea")
+		)
+		(instances
+			(project "algoritmi_motor_buttons_kicad"
+				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:TSM-105-01-F-SH")
+		(at 96.52 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "83e6b8fd-40fc-4a7b-83e2-dc18617ad0d7")
 		(property "Reference" "J1"
-			(at 156.21 45.7199 0)
+			(at 113.03 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3434,7 +3689,7 @@
 			)
 		)
 		(property "Value" "TSM-105-01-F-SH"
-			(at 156.21 48.2599 0)
+			(at 97.282 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3443,7 +3698,7 @@
 			)
 		)
 		(property "Footprint" "TSM-105-YY-ZZZ-SH"
-			(at 156.21 136.83 0)
+			(at 113.03 141.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3453,7 +3708,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/TSM-105-01-F-SH.pdf"
-			(at 156.21 236.83 0)
+			(at 113.03 241.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3718,7 @@
 			)
 		)
 		(property "Description" "5 Position, Dual-Row, .100&quot; Surface Mount Terminal Strip, Single-Row Vertical"
-			(at 139.7 41.91 0)
+			(at 96.52 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3472,7 +3727,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 156.21 436.83 0)
+			(at 113.03 441.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3482,7 +3737,7 @@
 			)
 		)
 		(property "Mouser Part Number" "200-TSM10501FSH"
-			(at 156.21 536.83 0)
+			(at 113.03 541.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3492,7 +3747,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=200-TSM10501FSH"
-			(at 156.21 636.83 0)
+			(at 113.03 641.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3502,7 +3757,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "SAMTEC"
-			(at 156.21 736.83 0)
+			(at 113.03 741.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3512,7 +3767,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "TSM-105-01-F-SH"
-			(at 156.21 836.83 0)
+			(at 113.03 841.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3547,7 +3802,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 36.83 95.25 0)
+		(at 29.21 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3556,7 +3811,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e26ee9f-0102-42f6-b809-ccac81f195f4")
 		(property "Reference" "C2"
-			(at 40.64 93.9799 0)
+			(at 33.02 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3565,7 +3820,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 40.64 96.5199 0)
+			(at 33.02 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3574,7 +3829,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 37.7952 99.06 0)
+			(at 30.1752 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3583,7 +3838,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 95.25 0)
+			(at 29.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,7 +3847,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 36.83 95.25 0)
+			(at 29.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3601,7 +3856,7 @@
 			)
 		)
 		(property "Manufacturer No" "CL10B104KB8NNWC"
-			(at 36.83 95.25 0)
+			(at 29.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,7 +3881,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 130.81 86.36 180)
+		(at 148.59 87.63 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3635,7 +3890,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e441efe-c64b-430b-8d52-b8c2863159d3")
 		(property "Reference" "R3"
-			(at 121.92 80.01 0)
+			(at 139.7 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,7 +3898,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 121.92 82.55 0)
+			(at 139.7 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3651,7 +3906,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 116.84 -9.83 0)
+			(at 134.62 -8.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3661,7 +3916,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 116.84 -109.83 0)
+			(at 134.62 -108.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3671,7 +3926,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 130.81 86.36 0)
+			(at 148.59 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3680,7 +3935,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 116.84 -309.83 0)
+			(at 134.62 -308.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3690,7 +3945,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 116.84 -409.83 0)
+			(at 134.62 -408.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3700,7 +3955,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 116.84 -509.83 0)
+			(at 134.62 -508.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3710,7 +3965,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 116.84 -609.83 0)
+			(at 134.62 -608.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3720,7 +3975,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 116.84 -709.83 0)
+			(at 134.62 -708.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3745,8 +4000,132 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:AV4404")
+		(at 71.12 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9212ca1a-d8ce-4a50-8b79-989b84a845e0")
+		(property "Reference" "J2"
+			(at 76.2 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AV4404"
+			(at 76.2 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "AV4404"
+			(at 90.17 180.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/product-detail/en/panasonic-electric-works/AV4404/255-3745-ND/646764"
+			(at 90.17 280.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Basic / Snap Action Switches SPDT 0.5A, Pin Plunger, PCB"
+			(at 71.12 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "5.2"
+			(at 90.17 480.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 90.17 580.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 90.17 680.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 90.17 780.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AV4404"
+			(at 90.17 880.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f7da2b1-65da-4c9a-9cee-3d97cfcee62b")
+		)
+		(pin "2"
+			(uuid "752a4268-13df-4ca4-9501-4ff4590d08b3")
+		)
+		(pin "3"
+			(uuid "63da40c8-3efa-4720-9227-7591d2779862")
+		)
+		(instances
+			(project ""
+				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 46.99 50.8 0)
+		(at 24.13 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3755,7 +4134,7 @@
 		(fields_autoplaced yes)
 		(uuid "99fa0964-8fa0-4078-b178-0a54d10d4e15")
 		(property "Reference" "#PWR02"
-			(at 46.99 57.15 0)
+			(at 24.13 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3764,7 +4143,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 46.99 55.88 0)
+			(at 24.13 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3772,7 +4151,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 50.8 0)
+			(at 24.13 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3781,7 +4160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 50.8 0)
+			(at 24.13 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3790,7 +4169,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 50.8 0)
+			(at 24.13 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3812,7 +4191,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 35.56 180)
+		(at 90.17 40.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3821,7 +4200,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a6e36e9-f1f0-4588-bd17-e398a3759c3b")
 		(property "Reference" "#PWR03"
-			(at 128.27 29.21 0)
+			(at 90.17 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3830,7 +4209,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 30.48 0)
+			(at 90.17 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3838,7 +4217,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 35.56 0)
+			(at 90.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3847,7 +4226,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 35.56 0)
+			(at 90.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +4235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 35.56 0)
+			(at 90.17 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,172 +4256,8 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:microswitch")
-		(at 76.2 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a119aad8-400b-41bf-bceb-3b176632e26e")
-		(property "Reference" "U2"
-			(at 87.63 84.4549 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 87.63 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:microswitch"
-			(at 76.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Up to 500 mA"
-			(at 76.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer No" "AV4444"
-			(at 76.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "28ba0301-271f-422f-9eb8-674988f4005f")
-		)
-		(pin "1"
-			(uuid "4a9350d7-7a5f-49e2-8784-eb09c478a2a9")
-		)
-		(pin "3"
-			(uuid "d4fe581c-7838-4e8b-8de5-e598a3affe5e")
-		)
-		(instances
-			(project ""
-				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:microswitch")
-		(at 147.32 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a3aba97d-01d1-471e-8837-7480063c7dce")
-		(property "Reference" "U3"
-			(at 158.75 85.7249 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 158.75 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:microswitch"
-			(at 147.32 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Up to 500 mA"
-			(at 147.32 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer No" "AV4444"
-			(at 147.32 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "863f488c-6196-4183-9f13-551e933660ad")
-		)
-		(pin "1"
-			(uuid "5b0c6e0c-504d-46b7-88a3-8e1f2efa8703")
-		)
-		(pin "3"
-			(uuid "eab8683f-2bcc-49da-a894-e9501c1b2942")
-		)
-		(instances
-			(project "algoritmi_motor_buttons_kicad"
-				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MagnTek:MT6701-CT")
-		(at 81.28 41.91 0)
+		(at 58.42 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4050,7 +4265,7 @@
 		(dnp no)
 		(uuid "a7444999-735f-42ee-8054-5ce7a7b88534")
 		(property "Reference" "U1"
-			(at 82.55 32.385 0)
+			(at 59.69 18.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4058,7 +4273,7 @@
 			)
 		)
 		(property "Value" "MT6701-CT"
-			(at 82.55 34.6964 0)
+			(at 59.69 20.7264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +4281,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 81.28 41.91 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +4290,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 41.91 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4084,7 +4299,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 41.91 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4092,8 +4307,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2856764, or C3003196"
-			(at 81.28 41.91 0)
+		(property "LCSC" "C2856764 ou C3003196"
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4102,7 +4317,7 @@
 			)
 		)
 		(property "Digikey" "N/A"
-			(at 81.28 41.91 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4111,7 +4326,7 @@
 			)
 		)
 		(property "Mouser" "N/A"
-			(at 81.28 41.91 0)
+			(at 58.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4154,7 +4369,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 139.7 80.01 0)
+		(at 157.48 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4163,7 +4378,7 @@
 		(fields_autoplaced yes)
 		(uuid "a91a8920-7142-4e68-b81f-fcf2aba8ea0d")
 		(property "Reference" "#PWR09"
-			(at 139.7 83.82 0)
+			(at 157.48 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4172,7 +4387,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 139.7 74.93 0)
+			(at 157.48 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4180,7 +4395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 80.01 0)
+			(at 157.48 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4189,7 +4404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 80.01 0)
+			(at 157.48 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4198,7 +4413,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 139.7 80.01 0)
+			(at 157.48 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4219,90 +4434,8 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:microswitch")
-		(at 69.85 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "adfef92b-114a-44e4-a68d-e2f4c614ea7b")
-		(property "Reference" "U4"
-			(at 81.28 137.7949 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 81.28 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:microswitch"
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Up to 500 mA"
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer No" "AV4444"
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "da5da82d-11ca-4bb8-9fb5-f64c3b91f75f")
-		)
-		(pin "1"
-			(uuid "be4e86d6-4f87-4b4e-99fa-36dd92ac8e5f")
-		)
-		(pin "3"
-			(uuid "dd808e9a-a469-46fd-94a7-d6e5e8541245")
-		)
-		(instances
-			(project "algoritmi_motor_buttons_kicad"
-				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 52.07 107.95 0)
+		(at 44.45 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4311,7 +4444,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc223fbf-fe5d-4b0c-8502-38de49312a01")
 		(property "Reference" "#PWR07"
-			(at 52.07 114.3 0)
+			(at 44.45 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4320,7 +4453,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 52.07 113.03 0)
+			(at 44.45 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4328,7 +4461,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 107.95 0)
+			(at 44.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4337,7 +4470,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 107.95 0)
+			(at 44.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4346,7 +4479,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 107.95 0)
+			(at 44.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +4501,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 59.69 85.09 180)
+		(at 52.07 87.63 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4377,7 +4510,7 @@
 		(fields_autoplaced yes)
 		(uuid "c363703a-8b91-408a-93f4-d3b74fe6ea25")
 		(property "Reference" "R2"
-			(at 50.8 78.74 0)
+			(at 43.18 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4518,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 50.8 81.28 0)
+			(at 43.18 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +4526,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 45.72 -11.1 0)
+			(at 38.1 -8.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4403,7 +4536,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 45.72 -111.1 0)
+			(at 38.1 -108.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,7 +4546,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 59.69 85.09 0)
+			(at 52.07 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4555,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 45.72 -311.1 0)
+			(at 38.1 -308.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4432,7 +4565,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 45.72 -411.1 0)
+			(at 38.1 -408.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4442,7 +4575,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 45.72 -511.1 0)
+			(at 38.1 -508.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4452,7 +4585,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 45.72 -611.1 0)
+			(at 38.1 -608.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4595,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 45.72 -711.1 0)
+			(at 38.1 -708.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4488,16 +4621,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 107.95 96.52 0)
+		(at 125.73 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c7d5e003-e349-4518-938a-f1d51bbf310c")
 		(property "Reference" "C3"
-			(at 111.76 95.2499 0)
+			(at 129.54 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4506,7 +4638,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 111.76 97.7899 0)
+			(at 129.54 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4515,7 +4647,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 108.9152 100.33 0)
+			(at 126.6952 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4524,7 +4656,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 96.52 0)
+			(at 125.73 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4533,7 +4665,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 107.95 96.52 0)
+			(at 125.73 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4542,7 +4674,7 @@
 			)
 		)
 		(property "Manufacturer No" "CL10B104KB8NNWC"
-			(at 107.95 96.52 0)
+			(at 125.73 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4567,7 +4699,7 @@
 	)
 	(symbol
 		(lib_id "SamacSys_Parts:CMP0603-FX-1002ELF")
-		(at 53.34 138.43 180)
+		(at 50.8 133.35 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4576,7 +4708,7 @@
 		(fields_autoplaced yes)
 		(uuid "d539e327-ea6d-496f-8976-f4aeb5b6d42d")
 		(property "Reference" "R5"
-			(at 44.45 132.08 0)
+			(at 41.91 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,7 +4716,7 @@
 			)
 		)
 		(property "Value" "CMP0603-FX-1002ELF"
-			(at 44.45 134.62 0)
+			(at 41.91 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,7 +4724,7 @@
 			)
 		)
 		(property "Footprint" "RESC1608X55N"
-			(at 39.37 42.24 0)
+			(at 36.83 37.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4602,7 +4734,7 @@
 			)
 		)
 		(property "Datasheet" "https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf"
-			(at 39.37 -57.76 0)
+			(at 36.83 -62.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4612,7 +4744,7 @@
 			)
 		)
 		(property "Description" "BOURNS - CMP0603-FX-1002ELF - RES, 10K, 1%, 0.25W, 0603, THICK FILM"
-			(at 53.34 138.43 0)
+			(at 50.8 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,7 +4753,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 39.37 -257.76 0)
+			(at 36.83 -262.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4763,7 @@
 			)
 		)
 		(property "Mouser Part Number" "652-CMP0603-FX-1002L"
-			(at 39.37 -357.76 0)
+			(at 36.83 -362.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4641,7 +4773,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CMP0603-FX-1002ELF?qs=TiOZkKH1s2RjiDXhjsUTgw%3D%3D"
-			(at 39.37 -457.76 0)
+			(at 36.83 -462.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4651,7 +4783,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Bourns"
-			(at 39.37 -557.76 0)
+			(at 36.83 -562.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4661,7 +4793,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CMP0603-FX-1002ELF"
-			(at 39.37 -657.76 0)
+			(at 36.83 -662.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4687,7 +4819,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 139.7 135.89 0)
+		(at 133.35 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4696,7 +4828,7 @@
 		(fields_autoplaced yes)
 		(uuid "d96ba057-a6d1-4edd-a572-4829fbb6b97b")
 		(property "Reference" "#PWR013"
-			(at 139.7 139.7 0)
+			(at 133.35 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4705,7 +4837,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 139.7 130.81 0)
+			(at 133.35 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4713,7 +4845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 135.89 0)
+			(at 133.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4722,7 +4854,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 135.89 0)
+			(at 133.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4731,7 +4863,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 139.7 135.89 0)
+			(at 133.35 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4752,8 +4884,132 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:AV4404")
+		(at 143.51 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df980a12-36ca-4bae-8956-49364bdb03d1")
+		(property "Reference" "J5"
+			(at 148.59 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AV4404"
+			(at 148.59 136.906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "AV4404"
+			(at 162.56 235.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.in/product-detail/en/panasonic-electric-works/AV4404/255-3745-ND/646764"
+			(at 162.56 335.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Basic / Snap Action Switches SPDT 0.5A, Pin Plunger, PCB"
+			(at 143.51 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "5.2"
+			(at 162.56 535.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 162.56 635.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 162.56 735.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 162.56 835.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "AV4404"
+			(at 162.56 935.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51268e8f-4ad2-450a-9e75-6ab8dc3133cc")
+		)
+		(pin "2"
+			(uuid "2a1fc714-f463-4dd4-8f83-f638f19b1f26")
+		)
+		(pin "3"
+			(uuid "0820cf69-84a3-4bd2-9e88-8847586fdff3")
+		)
+		(instances
+			(project "algoritmi_motor_buttons_kicad"
+				(path "/28714b9f-a6df-4fd3-b17c-6e502aee41ec"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 123.19 165.1 0)
+		(at 116.84 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4762,7 +5018,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9fd7a7f-2fec-46e0-9d7a-d6d564887155")
 		(property "Reference" "#PWR012"
-			(at 123.19 171.45 0)
+			(at 116.84 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +5027,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 170.18 0)
+			(at 116.84 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4779,7 +5035,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 165.1 0)
+			(at 116.84 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4788,7 +5044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 165.1 0)
+			(at 116.84 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4797,7 +5053,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 165.1 0)
+			(at 116.84 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4819,7 +5075,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 46.99 36.83 0)
+		(at 24.13 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4828,7 +5084,7 @@
 		(fields_autoplaced yes)
 		(uuid "ebf67d65-011e-4545-84d4-f31a840bfc24")
 		(property "Reference" "#PWR01"
-			(at 46.99 40.64 0)
+			(at 24.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4837,7 +5093,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 46.99 31.75 0)
+			(at 24.13 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,7 +5101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 36.83 0)
+			(at 24.13 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4854,7 +5110,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 36.83 0)
+			(at 24.13 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4863,7 +5119,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 46.99 36.83 0)
+			(at 24.13 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4885,7 +5141,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 189.23 43.18 180)
+		(at 106.68 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4894,7 +5150,7 @@
 		(fields_autoplaced yes)
 		(uuid "f347ff98-e90f-4f77-bf53-2a0e78fd3d58")
 		(property "Reference" "#PWR05"
-			(at 189.23 39.37 0)
+			(at 106.68 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4903,7 +5159,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 189.23 48.26 0)
+			(at 106.68 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4911,7 +5167,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 43.18 0)
+			(at 106.68 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4920,7 +5176,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 43.18 0)
+			(at 106.68 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4929,7 +5185,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 189.23 43.18 0)
+			(at 106.68 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)

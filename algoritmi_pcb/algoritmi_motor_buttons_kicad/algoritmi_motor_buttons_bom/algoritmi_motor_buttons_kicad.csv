@@ -1,0 +1,6 @@
+"Reference","Value","Datasheet","Footprint","Qty","DNP","LCSC","Manufacturer No","Manufacturer_Name","Manufacturer_Part_Number","Mouser Part Number"
+"C1,C2,C3,C4,C5","100nF","~","Capacitor_SMD:C_0201_0603Metric","5","","","CL10B104KB8NNWC","","",""
+"J1","TSM-105-01-F-SH","https://componentsearchengine.com/Datasheets/1/TSM-105-01-F-SH.pdf","TSM-105-YY-ZZZ-SH","1","","","","SAMTEC","TSM-105-01-F-SH","200-TSM10501FSH"
+"J2,J3,J4,J5","AV4404","https://www.digikey.in/product-detail/en/panasonic-electric-works/AV4404/255-3745-ND/646764","AV4404","4","","","","Panasonic","AV4404",""
+"R1,R2,R3,R4,R5,R6,R7,R8","CMP0603-FX-1002ELF","https://ms.componentsearchengine.com/Datasheets/2/CMP0603-FX-1002ELF.pdf","RESC1608X55N","8","","","","Bourns","CMP0603-FX-1002ELF","652-CMP0603-FX-1002L"
+"U1","MT6701-CT","","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","1","","C2856764 ou C3003196","","","",""
