@@ -485,7 +485,7 @@
       "plot": "algoritmi_motor_buttons_gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "algoritmi_motor_buttons_3d/algoritmi_motor_buttons_kicad.step",
       "svg": "",
       "vrml": ""
     },

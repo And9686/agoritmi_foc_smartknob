@@ -489,8 +489,8 @@
       "plot": "algoritmi_foc_gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
+      "step": "algoritmi_foc_3dshape/algoritmi_foc_driver.step",
+      "svg": "algoritmi_foc_3dshape/",
       "vrml": ""
     },
     "page_layout_descr_file": ""
