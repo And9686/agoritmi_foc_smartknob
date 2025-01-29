@@ -199,6 +199,10 @@ typedef struct _PB_PersistentConfiguration {
     PB_StrainCalibration strain;
 } PB_PersistentConfiguration;
 
+typedef struct _BT_AlgoritmiFOC {
+   char data [128];
+} BT_AlgoritmiFOC;
+
 
 #ifdef __cplusplus
 extern "C" {

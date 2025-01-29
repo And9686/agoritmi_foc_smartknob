@@ -241,6 +241,9 @@ InterfaceTask::InterfaceTask(const uint8_t task_core, MotorTask& motor_task, Dis
     knob_state_queue_ = xQueueCreate(1, sizeof(PB_SmartKnobState));
     assert(knob_state_queue_ != NULL);
 
+    bt_command_queue_ = xQueueCreate(15, sizeof(String));
+    assert(bt_command_queue_ != NULL);
+
     mutex_ = xSemaphoreCreateMutex();
     assert(mutex_ != NULL);
 }
@@ -342,7 +345,7 @@ void InterfaceTask::run() {
 
         // Check for Bluetooth commands (coming from BluetoothTask)
         if (bt_command_queue_) {
-            String cmd;
+            BT_AlgoritmiFOC cmd;
             if (xQueueReceive(bt_command_queue_, &cmd, 0) == pdTRUE) {
                 processBTCommand(cmd);
             }
@@ -427,6 +430,8 @@ void InterfaceTask::updateHardware() {
         }
 
     #endif
+
+    
     /* ------ */
 
 
@@ -535,7 +540,7 @@ void InterfaceTask::applyConfig(PB_SmartKnobConfig& config, bool from_remote) {
     motor_task_.setConfig(config);
 }
 
-void InterfaceTask::processBTCommand(const String& cmd) {
+void InterfaceTask::processBTCommand(const BT_AlgoritmiFOC& cmd) {
 
     /*  
         For this to be seamlessly integrated with the Android APP
@@ -571,11 +576,32 @@ void InterfaceTask::processBTCommand(const String& cmd) {
     static int32_t actualPosition = 0;
     static int32_t minPosition = 0;
     static int32_t maxPosition = 0;
+    static char calibrateChar = 0;
+
+    char phrase[64];
+    sprintf(phrase, "Stack left: %d bytes\nFree heap: %d bytes\n", uxTaskGetStackHighWaterMark(NULL) * 4, ESP.getFreeHeap());
+    log(phrase);
 
     
     // The string was correctly sent and the values were successfully saved
-    if (sscanf(cmd.c_str(), "%d %d %d %d", &mode, &minPosition, &maxPosition, &actualPosition) == 4) {
+    if (sscanf(cmd.data, "%d %d %d %d %c", &mode, &minPosition, &maxPosition, &actualPosition, &calibrateChar) == 5) {
         // I need to add verifications to these values that are sent
+
+        motor_task_.playHaptic(true);
+
+        changeableConfiguration = configs[mode];
+        changeableConfiguration.position = actualPosition;
+        changeableConfiguration.min_position = minPosition;
+        changeableConfiguration.max_position = maxPosition;
+        changeableConfiguration.text[0] = calibrateChar;
+        applyConfig(changeableConfiguration, true);
+
+        snprintf(buf_, sizeof(buf_), "BT Command received: %s", cmd.data);
+        log(buf_);
+    } else if (sscanf(cmd.data, "%d %d %d %d", &mode, &minPosition, &maxPosition, &actualPosition) == 4) {
+        // I need to add verifications to these values that are sent
+
+        motor_task_.playHaptic(true);
 
         changeableConfiguration = configs[mode];
         changeableConfiguration.position = actualPosition;
@@ -583,12 +609,19 @@ void InterfaceTask::processBTCommand(const String& cmd) {
         changeableConfiguration.max_position = maxPosition;
         applyConfig(changeableConfiguration, true);
 
-        snprintf(buf_, sizeof(buf_), "BT Command received: %s", cmd.c_str());
+        snprintf(buf_, sizeof(buf_), "BT Command received: %s", cmd.data);
         log(buf_);
+    } else if (sscanf(cmd.data, "%c", &calibrateChar) == 1) {
+        if (calibrateChar == 'C') {
+            motor_task_.runCalibration();
+        } else {
+            snprintf(buf_, sizeof(buf_), "ERROR: BT Command received: %s", cmd.data);
+        }
     } else {
-        snprintf(buf_, sizeof(buf_), "ERROR: BT Command received: %s", cmd.c_str());
+        snprintf(buf_, sizeof(buf_), "ERROR: BT Command received: %s", cmd.data);
         log(buf_);
     }
+    
 
     // Process the received string command
     /*if (cmd == "0") {

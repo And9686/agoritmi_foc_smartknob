@@ -11,6 +11,9 @@ Configuration config;
 #if SK_DISPLAY
 static DisplayTask display_task(0);
 static DisplayTask* display_task_p = &display_task;
+#elif AF_DISPLAY
+static DisplayTask display_task(0);
+static DisplayTask* display_task_p = &display_task;
 #else
 static DisplayTask* display_task_p = nullptr;
 #endif
@@ -32,6 +35,14 @@ void setup() {
   motor_task.addListener(display_task.getKnobStateQueue());
   #endif
 
+  #if AF_DISPLAY
+  display_task.setLogger(&interface_task);
+  display_task.begin();
+
+  // Connect display to motor_task's knob state feed
+  motor_task.addListener(display_task.getKnobStateQueue());
+  #endif
+
   interface_task.begin();
 
   config.setLogger(&interface_task);
@@ -43,7 +54,7 @@ void setup() {
   motor_task.begin();
 
   #if AF_SELECTOR
-    bluetooth_task.setDeviceName("Algoritmi_FOC");
+    bluetooth_task.setDeviceName("OMG_CONNECT_V1");
     bluetooth_task.begin();
     // Connect Bluetooth task to Interface task
     interface_task.setBTCommandQueue(bluetooth_task.getCommandQueue());

@@ -5,7 +5,12 @@
 #include "task.h"
 #include "interface_task.h"
 
-#if AF_SELECTOR
+#if AF_DISPLAY
+#include <SPI.h>
+#include "XPT2046_Touchscreen.h"
+#endif
+
+#if AF_BUTTONS
     #define L_BUTTON 16
     #define R_BUTTON 17
 #endif
@@ -16,6 +21,10 @@
     Furthermore I'll check if it needs to be in the interface_task
     as the code evolves.
 */
+
+struct RECT{
+  int32_t x1, y1, x2, y2;
+};
 
 class BluetoothTask : public Task<BluetoothTask> {
     friend class Task<BluetoothTask>; // Allow base Task to invoke protected run()
@@ -31,6 +40,7 @@ class BluetoothTask : public Task<BluetoothTask> {
 
         // Buttons
         void updateHardware(void);
+        void updateTouch(int, int, int);
 
     protected:
         void run();
@@ -39,11 +49,20 @@ class BluetoothTask : public Task<BluetoothTask> {
         MotorTask& motor_task_;
         BluetoothSerial SerialBT;
         String device_name_;
-        String rx_buffer_;
+        BT_AlgoritmiFOC rx_buffer_;
+        //String rx_buffer_;
         QueueHandle_t command_queue_;
         QueueHandle_t knob_state_queue_ = NULL;
+
+        #if AF_DISPLAY
+        RECT r1, r2, r3, r4;
+        SPIClass touchscreenSPI;
+  
+        int x, y, z;
+        #endif
         
         /* Queues */
-        void processCommand(const String& command);
+        //void processCommand(const String& command);
+        void processCommand(const BT_AlgoritmiFOC&);
         void processKnobState(const PB_SmartKnobState& state);
 };

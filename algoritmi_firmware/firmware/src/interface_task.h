@@ -65,7 +65,7 @@ class InterfaceTask : public Task<InterfaceTask>, public Logger {
 
         QueueHandle_t log_queue_;
         QueueHandle_t knob_state_queue_;
-        QueueHandle_t bt_command_queue_ = NULL;
+        QueueHandle_t bt_command_queue_;
         SerialProtocolPlaintext plaintext_protocol_;
         SerialProtocolProtobuf proto_protocol_;
 
@@ -73,5 +73,6 @@ class InterfaceTask : public Task<InterfaceTask>, public Logger {
         void updateHardware();
         void publishState();
         void applyConfig(PB_SmartKnobConfig& config, bool from_remote);
-        void processBTCommand(const String& cmd); // Algoritmi_FOC
+        void processBTCommand(const BT_AlgoritmiFOC&);
+        //void processBTCommand(const String& cmd); // Algoritmi_FOC
 };

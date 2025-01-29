@@ -79,6 +79,11 @@ void MotorTask::run() {
 
     PB_PersistentConfiguration c = configuration_.get();
     motor.pole_pairs = c.motor.calibrated ? c.motor.pole_pairs : 7;
+
+    // TODO: This is not supposed to be set here
+    c.motor.zero_electrical_offset = 3.03;
+    c.motor.direction_cw = Direction::CW;
+
     motor.initFOC(c.motor.zero_electrical_offset, c.motor.direction_cw ? Direction::CW : Direction::CCW);
 
     motor.monitor_downsample = 0; // disable monitor at first - optional

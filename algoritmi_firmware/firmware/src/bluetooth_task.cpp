@@ -1,12 +1,25 @@
+#if AF_SELECTOR
 #include "bluetooth_task.h"
 
 BluetoothTask::BluetoothTask(const uint8_t task_core, MotorTask& motor_task) 
     : Task("Bluetooth", 4000, 1, task_core),
       motor_task_(motor_task),
       device_name_("ESP32-BT-Slave") {
+        
     // Create command queue for strings
-    command_queue_ = xQueueCreate(10, sizeof(String));
+    command_queue_ = xQueueCreate(1, sizeof(BT_AlgoritmiFOC));
     assert(command_queue_ != NULL);
+
+
+    #if AF_DISPLAY
+    r1 = {10, 10, 101, 115};
+    r2 = {111, 10, 202, 115};
+    r3 = {10, 125, 202, 230};
+    r4 = {212, 10, 310, 230};
+
+    touchscreenSPI = SPIClass(VSPI);
+
+    #endif
 
     // Create knob state queue
     knob_state_queue_ = xQueueCreate(1, sizeof(PB_SmartKnobState));
@@ -24,15 +37,23 @@ void BluetoothTask::setDeviceName(const String& name) {
 }
 
 void BluetoothTask::run() {
-    // Initialize Bluetooth
-    pinMode(LED_GPIO, OUTPUT);
-    SerialBT.begin(device_name_);
-
-    #if AF_SELECTOR
-        pinMode(L_BUTTON, INPUT);
-        pinMode(R_BUTTON, INPUT);
+    #if AF_DISPLAY
+    XPT2046_Touchscreen touchscreen(XPT2046_CS, XPT2046_IRQ);
+    touchscreenSPI.begin(XPT2046_CLK, XPT2046_MISO, XPT2046_MOSI, XPT2046_CS);
+    touchscreen.begin(touchscreenSPI);
+    touchscreen.setRotation(3);
     #endif
 
+    // Initialize Bluetooth
+    SerialBT.begin(device_name_);
+
+    #if AF_BUTTONS
+    pinMode(L_BUTTON, INPUT);
+    pinMode(R_BUTTON, INPUT);
+    #endif
+
+    int rx_index = 0;
+    
     while (1) {
         // Check for knob state updates
         if (knob_state_queue_) {
@@ -42,30 +63,77 @@ void BluetoothTask::run() {
             }
         }
 
+        
+        
         // Process incoming Bluetooth data
         if (SerialBT.available()) {
             char rx_byte = SerialBT.read();
-            if (rx_byte != '\n') {
-                rx_buffer_ += String(rx_byte);
+            char debug[32];
+            if (rx_byte != -1 && rx_byte != '\n') {  
+                if (rx_index < sizeof(rx_buffer_.data) - 1) {  
+                    rx_buffer_.data[rx_index++] = rx_byte;  // Cast to char for storage
+                } else {
+                    SerialBT.println("Message Overflow!"); // buffer overflow handling
+                }
             } else {
+                rx_buffer_.data[rx_index] = '\0'; // insertign null terminator for end of string
                 processCommand(rx_buffer_);
-                rx_buffer_ = "";
+                
+                rx_index = 0; // reset index variable, even tho it really doesn't need this initialization
             }
         }
+
+        #if AF_BUTTONS
         updateHardware();
+        #endif
+
+        #if AF_DISPLAY
+        if (touchscreen.tirqTouched() && touchscreen.touched()) {
+            // Get Touchscreen points
+            TS_Point p = touchscreen.getPoint();
+            // Calibrate Touchscreen points with map function to the correct width and height
+            x = map(p.x, 200, 3700, 1, 320);
+            y = map(p.y, 240, 3800, 1, 240);
+            z = p.z;
+
+            updateTouch(x, y, z);
+            
+            vTaskDelay(pdMS_TO_TICKS(75));
+            x = 0;
+            y = 0;
+            z = 0;
+        }
+        #endif
 
         vTaskDelay(pdMS_TO_TICKS(25)); // Small delay to prevent task from hogging CPU
     }
 }
 
-void BluetoothTask::processCommand(const String& command) {
+void BluetoothTask::updateTouch(int touchX, int touchY, int touchZ) {
+    #if AF_DISPLAY
+    if(touchZ > 1500) {
+        if (r1.x1 < touchX && touchX < r1.x2 && r1.y1 < touchY && touchY < r1.y2) {
+        SerialBT.printf("PHONE\n"); 
+        } else if (r2.x1 < touchX && touchX < r2.x2 && r2.y1 < touchY && touchY < r2.y2) {
+            SerialBT.printf("MUSIC\n");
+        } else if (r3.x1 < touchX && touchX < r3.x2 && r3.y1 < touchY && touchY < r3.y2) {
+            SerialBT.printf("MAP\n");
+        } else if (r4.x1 < touchX && touchX < r4.x2 && r4.y1 < touchY && touchY < r4.y2) {
+            SerialBT.printf("SOUND\n");
+        }
+    }
+    #endif
+}
+
+void BluetoothTask::processCommand(const BT_AlgoritmiFOC& command) {
     // Try to send without waiting
     if (xQueueSend(command_queue_, &command, 0) != pdTRUE) {
         // Queue is full, notify user
         SerialBT.println("System busy, command not processed"); // portMAX_DELAY is for waitint until the queue is available to send again
     } else {
         // Command was queued successfully
-        SerialBT.println("Received: " + command);
+        SerialBT.print("Received: ");
+        SerialBT.println(command.data); // Debug through bluetooth terminal! - Android App called Serial BT Terminal
     }
 }
 
@@ -82,6 +150,7 @@ void BluetoothTask::processKnobState(const PB_SmartKnobState& state) {
     }
 }
 
+/* This part maybe needs to be in a separate task futurely */
 void BluetoothTask::updateHardware(void) {
 
     static int leftButton = 0;
@@ -95,16 +164,18 @@ void BluetoothTask::updateHardware(void) {
     rightButton = digitalRead(R_BUTTON);
 
     if (!leftButton && !alreadyReadLeft) {
-        SerialBT.println("Left Button Pressed..");
+        SerialBT.printf("BL\n");
         alreadyReadLeft = true;
     } else if (leftButton && alreadyReadLeft){
         alreadyReadLeft = false;
     }
 
     if (!rightButton && !alreadyReadRight) {
-        SerialBT.println("Right Button Pressed..");
+        SerialBT.printf("BR\n");
         alreadyReadRight = true;
     } else if (rightButton && alreadyReadRight){
         alreadyReadRight = false;
     }
+
 }
+#endif

@@ -1,3 +1,193 @@
+#if AF_DISPLAY
+#include "display_task.h"
+#include "semaphore_guard.h"
+#include "bitmap.h" // ProgMem bitmap: check if this works!
+
+
+DisplayTask::DisplayTask(const uint8_t task_core) : Task{"Display", 2048, 1, task_core} {
+  knob_state_queue_ = xQueueCreate(1, sizeof(PB_SmartKnobState));
+  assert(knob_state_queue_ != NULL);
+
+  r1 = {10, 10, 101, 115};
+  r2 = {111, 10, 202, 115};
+  r3 = {10, 125, 202, 230};
+  r4 = {212, 10, 310, 230};
+
+  mutex_ = xSemaphoreCreateMutex();
+  assert(mutex_ != NULL);
+}
+
+DisplayTask::~DisplayTask() {
+  vQueueDelete(knob_state_queue_);
+  vSemaphoreDelete(mutex_);
+}
+
+void DisplayTask::run() {
+
+  // Start the tft display
+  tft_.init();
+  tft_.invertDisplay(0);
+  // Set the TFT display rotation in landscape mode
+  tft_.setRotation(1);
+  // Clear the screen before writing to it
+  tft_.fillScreen(TFT_BLACK);
+  tft_.setTextColor(TFT_BLACK, TFT_WHITE);
+
+  pinMode(19, OUTPUT);
+  digitalWrite(19, HIGH);
+
+  // Set X and Y coordinates for center of display
+  int centerX = 320 / 2;
+  int centerY = 240 / 2;
+
+  spr_.setColorDepth(0);
+
+  if (spr_.createSprite(320, 240) == nullptr) {
+      log("ERROR: sprite allocation failed!");
+      tft_.fillScreen(TFT_RED);
+  } else {
+      log("Sprite created!");
+      tft_.fillScreen(TFT_PURPLE);
+  }
+  PB_SmartKnobState state;
+  tft_.fillScreen(TFT_BLACK);
+  //tft_.drawCircle(290, 50, 10, TFT_WHITE); //DEBUG PURPOSES
+  printTouchToDisplay(5, 0);
+  //tft.drawBitmap(0, 0, gui_bmp_bitmap, 100, 120, TFT_WHITE, TFT_BLACK); // test to see if bitmap function works
+  //tft_.drawBitmap(centerBitmapAxis(r1_width, 68, r1.x1), centerBitmapAxis(r1_height, 68, r1.y1), gui_bmp_phone, 68, 68, TFT_CYAN, TFT_BLACK);
+  
+  while(1){
+        if (xQueueReceive(knob_state_queue_, &state, portMAX_DELAY) == pdFALSE) {
+          continue;
+        }
+
+        // Selected Modes
+        if (state.config.text[0] == 'P') {
+          printTouchToDisplay(0, 1);
+        } else if (state.config.text[0] == 'S') {
+          printTouchToDisplay(1, 1);
+        } else if (state.config.text[0] == 'V') {
+          printTouchToDisplay(2, 1);
+        } else if (state.config.text[0] == 'M') {
+          printTouchToDisplay(3, 1);
+        } else if (state.config.text[0] == 'B') {
+          // Modes to be selected
+          printTouchToDisplay(state.current_position, 0);
+            
+          /*if (state.config.position == 0) {
+            printTouchToDisplay(0);
+          } else if (state.config.position == 1) {
+            printTouchToDisplay(1);
+          } else if (state.config.position == 2) {
+            printTouchToDisplay(2);
+          } else if (state.config.position == 3) {
+            printTouchToDisplay(3);
+          }*/
+
+        }
+
+        delay(5);
+  }
+}
+
+void DisplayTask::printTouchToDisplay(int touchMode, int selected) {
+  // Clear TFT screen
+  spr_.fillSprite(TFT_BLACK);
+
+  int32_t r1_width = r1.x2 - r1.x1;
+  int32_t r2_width = r2.x2 - r2.x1;
+  int32_t r3_width = r3.x2 - r3.x1;
+  int32_t r4_width = r4.x2 - r4.x1;
+
+  int32_t r1_height = r1.y2 - r1.y1;
+  int32_t r2_height = r2.y2 - r2.y1;
+  int32_t r3_height = r3.y2 - r3.y1;
+  int32_t r4_height = r4.y2 - r4.y1;
+  
+  spr_.drawRoundRect(r1.x1, r1.y1, (r1.x2-r1.x1), (r1.y2-r1.y1), 10, TFT_WHITE);
+  spr_.drawBitmap(centerBitmapAxis(r1_width, 69, r1.x1), centerBitmapAxis(r1_height, 69, r1.y1), gui_bmp_phone_un, 69, 69, TFT_BLACK, TFT_WHITE);
+  
+  spr_.drawRoundRect(r2.x1, r2.y1, (r2.x2-r2.x1), (r2.y2-r2.y1), 10, TFT_WHITE);
+  spr_.drawBitmap(centerBitmapAxis(r2_width, 65, r2.x1), centerBitmapAxis(r2_height, 70, r2.y1), gui_bmp_music_un, 65, 70, TFT_BLACK, TFT_WHITE);
+
+  spr_.drawRoundRect(r3.x1, r3.y1, (r3.x2-r3.x1), (r3.y2-r3.y1), 10, TFT_WHITE);
+  spr_.drawBitmap(centerBitmapAxis(r3_width, 68, r3.x1), centerBitmapAxis(r3_height, 66, r3.y1), gui_bmp_map_un, 68, 66, TFT_BLACK, TFT_WHITE);
+
+  spr_.drawRoundRect(r4.x1, r4.y1, (r4.x2-r4.x1), (r4.y2-r4.y1), 10, TFT_WHITE);
+  spr_.drawBitmap(centerBitmapAxis(r4_width, 81, r4.x1), centerBitmapAxis(r4_height, 66, r4.y1), gui_bmp_sound_un, 81, 66, TFT_BLACK, TFT_WHITE);
+
+  
+  spr_.setTextColor(TFT_BLACK, TFT_WHITE);
+  if (selected) {
+    // Selected option in the main menu
+    if (touchMode == 0) {
+      spr_.fillRoundRect(r1.x1, r1.y1, (r1.x2-r1.x1), (r1.y2-r1.y1), 10, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r1_width, 68, r1.x1), centerBitmapAxis(r1_height, 68, r1.y1), gui_bmp_phone, 68, 68, TFT_CYAN, TFT_BLACK);
+    } else if (touchMode == 1) {
+      spr_.fillRoundRect(r2.x1, r2.y1, (r2.x2-r2.x1), (r2.y2-r2.y1), 10, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r2_width, 64, r2.x1), centerBitmapAxis(r2_height, 69, r2.y1), gui_bmp_music, 64, 69, TFT_CYAN, TFT_BLACK);
+    } else if (touchMode == 3) {
+      spr_.fillRoundRect(r3.x1, r3.y1, (r3.x2-r3.x1), (r3.y2-r3.y1), 10, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r3_width, 68, r3.x1), centerBitmapAxis(r3_height, 66, r3.y1), gui_bmp_map, 68, 66, TFT_CYAN, TFT_BLACK);
+    } else if (touchMode == 2) {
+      spr_.fillRoundRect(r4.x1, r4.y1, (r4.x2-r4.x1), (r4.y2-r4.y1), 10, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r4_width, 82, r4.x1), centerBitmapAxis(r4_height, 67, r4.y1), gui_bmp_sound, 82, 67, TFT_CYAN, TFT_BLACK);
+    }
+  } else {
+    // Just for navigation in the main menu
+    if (touchMode == 0) {
+      spr_.drawRoundRect(r1.x1, r1.y1, (r1.x2-r1.x1), (r1.y2-r1.y1), 10, TFT_CYAN);
+      spr_.drawRoundRect(r1.x1-1, r1.y1-1, (r1.x2-r1.x1)+2, (r1.y2-r1.y1)+2, 12, TFT_CYAN);
+      spr_.drawRoundRect(r1.x1-2, r1.y1-2, (r1.x2-r1.x1)+4, (r1.y2-r1.y1)+4, 14, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r1_width, 68, r1.x1), centerBitmapAxis(r1_height, 68, r1.y1), gui_bmp_phone, 68, 68, TFT_BLACK, TFT_CYAN);
+    } else if (touchMode == 1) {
+      spr_.drawRoundRect(r2.x1, r2.y1, (r2.x2-r2.x1), (r2.y2-r2.y1), 10, TFT_CYAN);
+      spr_.drawRoundRect(r2.x1-1, r2.y1-1, (r2.x2-r2.x1)+2, (r2.y2-r2.y1)+2, 12, TFT_CYAN);
+      spr_.drawRoundRect(r2.x1-2, r2.y1-2, (r2.x2-r2.x1)+4, (r2.y2-r2.y1)+4, 14, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r2_width, 64, r2.x1), centerBitmapAxis(r2_height, 69, r2.y1), gui_bmp_music, 64, 69, TFT_BLACK, TFT_CYAN);
+    } else if (touchMode == 3) {
+      spr_.drawRoundRect(r3.x1, r3.y1, (r3.x2-r3.x1), (r3.y2-r3.y1), 10, TFT_CYAN);
+      spr_.drawRoundRect(r3.x1-1, r3.y1-1, (r3.x2-r3.x1)+2, (r3.y2-r3.y1)+2, 12, TFT_CYAN);
+      spr_.drawRoundRect(r3.x1-2, r3.y1-2, (r3.x2-r3.x1)+4, (r3.y2-r3.y1)+4, 14, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r3_width, 68, r3.x1), centerBitmapAxis(r3_height, 66, r3.y1), gui_bmp_map, 68, 66, TFT_BLACK, TFT_CYAN);
+    } else if (touchMode == 2) {
+      spr_.drawRoundRect(r4.x1, r4.y1, (r4.x2-r4.x1), (r4.y2-r4.y1), 10, TFT_CYAN);
+      spr_.drawRoundRect(r4.x1-1, r4.y1-1, (r4.x2-r4.x1)+2, (r4.y2-r4.y1)+2, 12, TFT_CYAN);
+      spr_.drawRoundRect(r4.x1-2, r4.y1-2, (r4.x2-r4.x1)+4, (r4.y2-r4.y1)+4, 14, TFT_CYAN);
+      spr_.drawBitmap(centerBitmapAxis(r4_width, 82, r4.x1), centerBitmapAxis(r4_height, 67, r4.y1), gui_bmp_sound, 82, 67, TFT_BLACK, TFT_CYAN);
+    }
+  }
+  
+  spr_.pushSprite(0,0);
+}
+
+int32_t DisplayTask::centerBitmapAxis(int32_t totalLength, int32_t bitAxisLength, int32_t startValue) {
+  return ((totalLength - bitAxisLength)/2) + startValue;
+}
+
+QueueHandle_t DisplayTask::getKnobStateQueue() {
+  return knob_state_queue_;
+}
+
+void DisplayTask::setBrightness(uint16_t brightness) {
+  SemaphoreGuard lock(mutex_);
+  brightness_ = brightness >> (16 - SK_BACKLIGHT_BIT_DEPTH);
+}
+
+void DisplayTask::setLogger(Logger* logger) {
+    logger_ = logger;
+}
+
+void DisplayTask::log(const char* msg) {
+    if (logger_ != nullptr) {
+        logger_->log(msg);
+    }
+}
+
+
+#endif
+
+
 #if SK_DISPLAY
 #include "display_task.h"
 #include "semaphore_guard.h"
@@ -31,7 +221,7 @@ static void drawPlayButton(TFT_eSprite& spr, int x, int y, int width, int height
 
 void DisplayTask::run() {
     tft_.begin();
-    tft_.invertDisplay(1);
+    tft_.invertDisplay(0);
     tft_.setRotation(SK_DISPLAY_ROTATION);
     tft_.fillScreen(TFT_DARKGREEN);
 
@@ -39,7 +229,7 @@ void DisplayTask::run() {
     ledcAttachPin(PIN_LCD_BACKLIGHT, LEDC_CHANNEL_LCD_BACKLIGHT);
     ledcWrite(LEDC_CHANNEL_LCD_BACKLIGHT, (1 << SK_BACKLIGHT_BIT_DEPTH) - 1);
 
-    spr_.setColorDepth(8);
+    spr_.setColorDepth(1);
 
     if (spr_.createSprite(TFT_WIDTH, TFT_HEIGHT) == nullptr) {
       log("ERROR: sprite allocation failed!");
