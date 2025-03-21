@@ -9,12 +9,6 @@
 #include <SPI.h>
 #include "XPT2046_Touchscreen.h"
 #endif
-
-#if AF_BUTTONS
-    #define L_BUTTON 16
-    #define R_BUTTON 17
-#endif
-
 /* 
     Because of the simplicity and practicability, 
     this task will also handle button inputs.

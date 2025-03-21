@@ -16,11 +16,6 @@
     #define SK_FORCE_UART_STREAM 0
 #endif
 
-#if AF_SELECTOR
-    #define L_BUTTON 16
-    #define R_BUTTON 17
-#endif
-
 class InterfaceTask : public Task<InterfaceTask>, public Logger {
     friend class Task<InterfaceTask>; // Allow base Task to invoke protected run()
 

@@ -8,10 +8,10 @@ DisplayTask::DisplayTask(const uint8_t task_core) : Task{"Display", 2048, 1, tas
   knob_state_queue_ = xQueueCreate(1, sizeof(PB_SmartKnobState));
   assert(knob_state_queue_ != NULL);
 
-  r1 = {10, 10, 101, 115};
-  r2 = {111, 10, 202, 115};
-  r3 = {10, 125, 202, 230};
-  r4 = {212, 10, 310, 230};
+  r1 = {29, 10, 114, 115}; // x1 = 10; x2 = 101
+  r2 = {124, 10, 209, 115}; // x1 = 111; x2 = 202
+  r3 = {29, 125, 209, 230}; // x1 = 10; x2 = 202
+  r4 = {218, 10, 310, 230}; // x1 = 212; x2 = 310
 
   mutex_ = xSemaphoreCreateMutex();
   assert(mutex_ != NULL);

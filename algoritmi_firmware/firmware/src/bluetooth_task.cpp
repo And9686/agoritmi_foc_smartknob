@@ -48,8 +48,10 @@ void BluetoothTask::run() {
     SerialBT.begin(device_name_);
 
     #if AF_BUTTONS
-    pinMode(L_BUTTON, INPUT);
-    pinMode(R_BUTTON, INPUT);
+    pinMode(Z_BUTTON, INPUT);
+    pinMode(Y_BUTTON, INPUT);
+    pinMode(X_BUTTON, INPUT);
+    pinMode(W_BUTTON, INPUT);
     #endif
 
     int rx_index = 0;
@@ -93,7 +95,7 @@ void BluetoothTask::run() {
             TS_Point p = touchscreen.getPoint();
             // Calibrate Touchscreen points with map function to the correct width and height
             x = map(p.x, 200, 3700, 1, 320);
-            y = map(p.y, 240, 3800, 1, 240);
+            y = map(p.y, 240, 3800, 240, 1); // INVERT LAST TWO PARAMETERS DEPEENDING ON DISPLAY
             z = p.z;
 
             updateTouch(x, y, z);
@@ -155,13 +157,19 @@ void BluetoothTask::updateHardware(void) {
 
     static int leftButton = 0;
     static int rightButton = 0;
+    static int wButton = 0;
+    static int xButton = 0;
 
     static bool alreadyReadRight = false;
     static bool alreadyReadLeft = false;
+    static bool alreadyReadW = false;
+    static bool alreadyReadX = false;
 
 // TODO: Implement the selector logic if needed
-    leftButton = digitalRead(L_BUTTON);
-    rightButton = digitalRead(R_BUTTON);
+    leftButton = digitalRead(Z_BUTTON);
+    rightButton = digitalRead(Y_BUTTON);
+    wButton = digitalRead(W_BUTTON);
+    xButton = digitalRead(X_BUTTON);
 
     if (!leftButton && !alreadyReadLeft) {
         SerialBT.printf("BL\n");
@@ -175,6 +183,20 @@ void BluetoothTask::updateHardware(void) {
         alreadyReadRight = true;
     } else if (rightButton && alreadyReadRight){
         alreadyReadRight = false;
+    }
+
+    if (!wButton && !alreadyReadW) {
+        SerialBT.printf("BW\n");
+        alreadyReadW = true;
+    } else if (wButton && alreadyReadW){
+        alreadyReadW = false;
+    }
+
+    if (!xButton && !alreadyReadX) {
+        SerialBT.printf("BX\n");
+        alreadyReadX = true;
+    } else if (xButton && alreadyReadX){
+        alreadyReadX = false;
     }
 
 }

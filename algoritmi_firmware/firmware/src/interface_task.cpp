@@ -254,12 +254,6 @@ InterfaceTask::~InterfaceTask() {
 
 void InterfaceTask::run() {
     stream_.begin();
-    
-    /* --- AlgoritmiFOC Project --- */
-    #if AF_SELECTOR
-        pinMode(L_BUTTON, INPUT);
-        pinMode(R_BUTTON, INPUT);
-    #endif
 
     /* ------*/
 

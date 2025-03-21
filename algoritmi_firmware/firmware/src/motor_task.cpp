@@ -81,7 +81,7 @@ void MotorTask::run() {
     motor.pole_pairs = c.motor.calibrated ? c.motor.pole_pairs : 7;
 
     // TODO: This is not supposed to be set here
-    c.motor.zero_electrical_offset = 3.03;
+    c.motor.zero_electrical_offset = 6.58;
     c.motor.direction_cw = Direction::CW;
 
     motor.initFOC(c.motor.zero_electrical_offset, c.motor.direction_cw ? Direction::CW : Direction::CCW);
@@ -236,7 +236,7 @@ void MotorTask::run() {
             angle_to_detent_center = -motor.shaft_angle - current_detent_center;
         #endif
 
-        float snap_point_radians = config.position_width_radians * config.snap_point;
+        float snap_point_radians = config.position_width_radians * config.snap_point; // the position the motor converted into radians
         float bias_radians = config.position_width_radians * config.snap_point_bias;
         float snap_point_radians_decrease = snap_point_radians + (current_position <= 0 ? bias_radians : -bias_radians);
         float snap_point_radians_increase = -snap_point_radians + (current_position >= 0 ? -bias_radians : bias_radians); 

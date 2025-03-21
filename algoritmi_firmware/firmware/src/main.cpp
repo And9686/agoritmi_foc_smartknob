@@ -54,7 +54,7 @@ void setup() {
   motor_task.begin();
 
   #if AF_SELECTOR
-    bluetooth_task.setDeviceName("OMG_CONNECT_V1");
+    bluetooth_task.setDeviceName("LARGE_FOC_2");
     bluetooth_task.begin();
     // Connect Bluetooth task to Interface task
     interface_task.setBTCommandQueue(bluetooth_task.getCommandQueue());
